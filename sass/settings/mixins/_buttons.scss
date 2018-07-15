@@ -1,0 +1,18 @@
+// Button Mixin Settings Stylesheet
+// ========================================
+
+@mixin buttons($background-value, $color-value, $border-color) {
+  background-color: $background-value;
+  color: $color-value;
+  padding: $spacer-s;
+  border: 2px solid $border-color;
+  border-radius: 5px;
+  display: inline-flex;
+  transition: .3s;
+}
+
+@mixin button--hover($background-value) {
+  background-color: $background-value;
+  transition: .3s;
+  cursor: pointer;
+}
