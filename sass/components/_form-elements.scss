@@ -1,0 +1,83 @@
+// Form Elements Stylesheet
+// ========================================
+
+// Label Styling -- Delete this if you are not using a label
+label {
+  @include font-type($primary-font, normal, 600);
+  font-size: 12px;
+  padding-left: 12px;
+}
+
+// Basic Form Input Styling
+input {
+  @include font-type($primary-font, normal, normal);
+  font-size: 16px;
+  color: $black;
+  border: 2px solid $gray;
+  border-radius: 5px;
+  padding: $spacer-s;
+}
+
+// Select Form Input Styling
+select {
+  @include font-type($primary-font, normal, normal);
+  color: $black;
+  font-size: 16px;
+  border: 2px solid $gray;
+  border-radius: 5px;
+  height: 30px;
+}
+
+.form {
+
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin-bottom: $spacer-lg;
+  }
+
+  &__icon {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-right: $spacer-s;
+
+    .fas {
+      color: $blue;
+      font-size: 40px;
+      text-align: center;
+      width: 40px; // keeps input fields aligned
+    }
+  }
+
+  &__field {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    @include media($medium) {
+      width: 60%;
+    }
+
+    @include media($large) {
+      width: 40%;
+    }
+
+    &--error {
+      color: $red;
+
+      input {
+        border: 2px solid $red;
+      }
+
+      :focus {
+        outline-color: $red;
+      }
+    }
+
+    &--row {
+      flex-direction: row;
+    }
+  }
+}

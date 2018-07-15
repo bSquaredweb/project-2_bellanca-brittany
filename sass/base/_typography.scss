@@ -1,0 +1,65 @@
+// Base Typography Stylesheet
+// This is where your base typography will go
+// ========================================
+
+h1, h2, h3, h4, h5, h6 {
+  @include font-type($secondary-font, normal, normal);
+  color: $black;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+h3 {
+  font-size: 28px;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+h5 {
+  font-size: 20px;
+}
+
+h6 {
+  font-size: 16px;
+}
+
+p, li {
+  @include font-type($primary-font, normal, normal);
+  font-size: 16px;
+  color: $black;
+  padding: $spacer-xs 0;
+}
+
+a {
+  @include font-type($primary-font, normal, 600);
+  font-size: 16px;
+  color: $green;
+  text-decoration: none;
+  transition: .3s;
+  border-bottom: 2px solid transparent;
+  padding: 0 $spacer-xs 2px;
+
+  &:hover {
+    color: darken($green, 25%);
+    transition: .3s;
+    border-bottom: 2px solid $brown;
+  }
+
+  &.alt {
+    color: $white;
+    border-bottom: none;
+
+    &:hover {
+      color: $brown;
+      border-bottom: none;
+    }
+  }
+}

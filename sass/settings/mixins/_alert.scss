@@ -1,0 +1,10 @@
+// Alert Mixin Settings Stylesheet
+// ========================================
+
+@mixin alert($background-value, $color-value, $border-color) {
+  background-color: $background-value;
+  color: $color-value;
+  border: 2px solid $border-color;
+  border-radius: 5px;
+  padding: $spacer-m;
+}

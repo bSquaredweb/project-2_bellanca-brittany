@@ -1,0 +1,153 @@
+// Base Layout Stylesheet
+// This is where your layout of the project will go
+// ========================================
+
+:focus {
+  outline-color: $green;
+}
+
+::selection {
+  color: $white;
+  background-color: $green;
+}
+
+.body {
+  background-color: $white;
+}
+
+.container {
+  max-width: 1280px;
+  margin: auto;
+}
+
+.header {
+  min-width: 320px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: $spacer-m;
+
+  &__logo {
+    padding: $spacer-lg $reset-0 $spacer-lg $reset-0;
+    max-width: 200px;
+  }
+
+  &__nav {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  @include media($medium) {
+    flex-direction: row;
+    padding-bottom: $reset-0;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: $spacer-lg;
+
+    &__logo {
+      padding: $spacer-m $reset-0 $reset-0 $spacer-m;
+      max-width: 175px;
+    }
+
+    &__nav {
+      width: 50%;
+      max-width: 430px;
+    }
+  }
+}
+
+.main {
+  padding: $spacer-m;
+  min-width: 290px;
+
+  &__section {
+    margin: $reset-0 $reset-0 $spacer-xxl;
+
+    &--elements, &--components {
+      margin-top: $spacer-lg;
+    }
+
+    @include media($medium) {
+      margin-right: $spacer-m;
+      margin-left: $spacer-m;
+    }
+  }
+}
+
+.item-container {
+  margin: $spacer-m $reset-0;
+
+  &--elements {
+    margin: $spacer-m;
+  }
+
+  @include media($medium) {
+    &--elements {
+      padding-top: $spacer-m;
+    }
+  }
+}
+
+.color-list {
+  display: flex;
+  flex-direction: column;
+  margin: $spacer-m $reset-0 $spacer-xlg;
+
+  &__item {
+    padding: $spacer-s;
+    margin-bottom: $spacer-lg;
+    text-align: center;
+    background-color: $gray;
+  }
+
+  &__square {
+    height: 100px;
+    margin-bottom: $spacer-xs;
+  }
+
+  @include media($medium) {
+    flex-direction: row;
+
+    &__item {
+      width: 100%;
+      max-width: 350px;
+      margin-bottom: $reset-0;
+      margin-right: $spacer-m;
+    }
+
+    &__square {
+      height: 150px;
+    }
+  }
+
+  @include media($large) {
+    &__item {
+      margin-right: $spacer-lg;
+    }
+
+    &__square {
+      height: 200px;
+    }
+  }
+}
+
+.type-list {
+  margin: $spacer-m $reset-0 $spacer-xlg;
+
+  &__item {
+    padding: $spacer-m;
+  }
+}
+
+.footer {
+  height: 50px;
+  min-width: 320px;
+  text-align: center;
+}

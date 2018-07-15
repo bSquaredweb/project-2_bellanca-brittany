@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Paperless Planner | The Pattern Library | Components</title>
+    <link href="https://fonts.googleapis.com/css?family=Handlee|Open+Sans:400,600" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="shortcut icon" href="img/favicon.png">
+    <link href="css/main.css" rel="stylesheet">
+  </head>
+  <body class="body">
+    <div class="container">
+      <header class="header">
+        <img src="img/logo.png" alt="Paperless Planner Logo" class="header__logo">
+        <nav class="header__nav">
+          <ul class="header__list">
+            <li class="header__list__item header__list__item--active">
+              <a href="index.html">Home</a>
+            </li>
+            <li class="header__list__item">
+              <a href="elements.html">Elements</a>
+            </li>
+            <li class="header__list__item">
+              <a href="components.html">Components</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main class="main">
+        <section class="main__section">
+          <h2>Components</h2>
+          <section class="main__section main__section--components">
+            <h3>Alerts</h3>
+            <div class="item-container">
+              <div class="alert">
+                <div class="alert--error">
+                  An unexpected error has occured. Please try again.
+                </div>
+              </div>
+            </div><!-- item container -->
+            <div class="item-container">
+              <div class="alert">
+                <div class="alert--success">
+                  Success! Your changes have been saved.
+                </div>
+              </div>
+            </div><!-- item-container -->
+            <div class="item-container">
+              <div class="alert">
+                <div class="alert--notification">
+                  This is a general information notice.
+                </div>
+              </div>
+            </div><!-- item-container -->
+          </section>
+
+          <section class="main__section">
+            <h3>Buttons</h3>
+            <div class="item-container">
+              <div class="button">
+                <div class="button--primary">
+                  Primary Button
+                </div>
+              </div>
+            </div><!-- item-container -->
+            <div class="item-container">
+              <div class="button">
+                <div class="button--secondary">
+                  Secondary Button
+                </div>
+              </div>
+            </div><!-- item-container -->
+            <div class="item-container">
+              <div class="button">
+                <div class="button--disabled">
+                  Disabled Button
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="main__section">
+            <h3>Chips</h3>
+            <div class="item-container">
+              <div class="chip">
+                <div class="chip__avatar">
+                  BB
+                </div>
+                <div class="chip__text-container">
+                  <div class="chip__text-title">
+                    Brittany Bellanca
+                  </div>
+                </div>
+              </div>
+            </div><!-- item container -->
+            <div class="item-container">
+              <div class="chip">
+                <div class="chip__avatar">
+                  BB
+                </div>
+                <div class="chip__text-container">
+                  <div class="chip__text-title">
+                    Brittany Bellanca
+                  </div>
+                  <div class="chip__text-description">
+                    bSquaredweb
+                  </div>
+                </div>
+              </div>
+            </div><!-- item container -->
+          </section>
+
+          <section class="main__section">
+            <h3>Form Elements</h3>
+            <div class="item-container">
+
+              <form class="form">
+                <div class="form__wrapper">
+                  <div class="form__icon">
+                    <i class="fas fa-user-circle"></i>
+                  </div>
+                  <div class="form__field">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" name="fullName" id="fullName" placeholder="Full Name">
+                  </div>
+                </div><!-- form__wrapper -->
+
+                <div class="form__wrapper">
+                  <div class="form__icon">
+                    <i class="fas fa-envelope"></i>
+                  </div>
+                  <div class="form__field form__field--error">
+                    <label for="email">Email *Please enter a valid email address*</label>
+                    <input type="email" name="email" id="email" placeholder="you@email.com">
+                  </div>
+                </div><!-- form__wrapper -->
+
+                <div class="form__wrapper">
+                  <div class="form__icon">
+                    <i class="fas fa-birthday-cake"></i>
+                  </div>
+                  <div class="form__field">
+                    <label for="birthMonth">Birthday</label>
+                    <div class="form__field--row">
+                      <select class="birthMonth" name="birthMonth" id="birthMonth">
+                        <option value="january">January</option>
+                        <option value="february">February</option>
+                        <option value="march">March</option>
+                        <option value="april">April</option>
+                        <option value="may">May</option>
+                        <option value="june">June</option>
+                        <option value="july">July</option>
+                        <option value="august">August</option>
+                        <option value="september">September</option>
+                        <option value="october">October</option>
+                        <option value="november">November</option>
+                        <option value="december">December</option>
+                      </select>
+                      <select class="birthDay" name="birthDay" id="birthDay">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                      </select>
+                    </div>
+                  </div>
+                </div><!-- form__wrapper -->
+
+              </form>
+            </div><!-- item-container -->
+          </section>
+        </section><!-- main__section -->
+      </main>
+      <footer class="footer">
+        <p>&copy;2018 |<a href="http://brittanybellanca.com" target="_blank">Brittany Bellanca</a></p>
+      </footer>
+    </div>
+  </body>
+</html>
