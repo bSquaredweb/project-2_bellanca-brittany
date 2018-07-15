@@ -9,6 +9,9 @@
 .container {
   max-width: 1280px;
   margin: auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .header {
@@ -18,6 +21,7 @@
   flex-direction: column;
   text-align: center;
   padding-bottom: $spacer-m;
+  flex: none;
 
   &__logo {
     padding: $spacer-lg $reset-0 $spacer-lg $reset-0;
@@ -57,6 +61,7 @@
 .main {
   padding: $spacer-m;
   min-width: 290px;
+  flex: 1;
 
   &__section {
     margin: $reset-0 $reset-0 $spacer-xxl;
