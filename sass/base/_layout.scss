@@ -2,15 +2,6 @@
 // This is where your layout of the project will go
 // ========================================
 
-:focus {
-  outline-color: $green;
-}
-
-::selection {
-  color: $white;
-  background-color: $green;
-}
-
 .body {
   background-color: $white;
 }

@@ -30,6 +30,10 @@ select {
 
 .form {
 
+  :focus {
+    outline-color: $green;
+  }
+
   &__wrapper {
     display: flex;
     flex-direction: row;
@@ -73,6 +77,11 @@ select {
 
       :focus {
         outline-color: $red;
+      }
+
+      ::selection {
+        background-color: $red;
+        color: $white;
       }
     }
 

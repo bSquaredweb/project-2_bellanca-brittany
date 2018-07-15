@@ -2,6 +2,11 @@
 // This is where your base typography will go
 // ========================================
 
+::selection {
+  color: $white;
+  background-color: $green;
+}
+
 h1, h2, h3, h4, h5, h6 {
   @include font-type($secondary-font, normal, normal);
   color: $black;
