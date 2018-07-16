@@ -15,6 +15,7 @@ Will be updated during part 3
 
 #### Resources
 - [Using Flexbox for Sticky Footer](https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/): This is an awesome, quick solution that uses flexbox to get that footer stuck to the bottom!!!!!!
+- [A CodePen](https://codepen.io/raubaca/pen/VejpQP): Used this CodePen and help from our classmate Hanna to learn how to style select fields!
 
 #### Deductions
 > I reviewed the list of deductions for this project and in the syllabus.

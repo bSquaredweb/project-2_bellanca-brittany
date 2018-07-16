@@ -66,19 +66,39 @@
         margin-bottom: $spacer-s;
       }
 
-      // Select Form Input Styling
-      select {
-        @include font-type($primary-font, normal, normal);
-        background-color: $white;
-        font-size: 16px;
-        color: $blue;
-        padding: $spacer-xs $spacer-s;
+      .select {
+        position: relative;
+        display: inline-block;
+        height: 40px;
         border: 2px solid $blue;
-        border-radius: 0;
-        height: 50px;
-        appearance: none;
-        -webkit-appearance: none;
-        -moz-appearance: none;
+
+        &::after {
+          content: '';
+          width: 0;
+          position: absolute;
+          right: 15px;
+          top: 35%;
+          border-width: 10px 8px;
+          border-style: solid;
+          border-color: $blue transparent transparent transparent;
+          pointer-events: none;
+        }
+
+        // Select Form Input Styling
+        select {
+          @include font-type($primary-font, normal, normal);
+          background-color: $white;
+          font-size: 16px;
+          color: $blue;
+          padding: $spacer-xs $spacer-s;
+          border-radius: 0;
+          width: 100%;
+          height: 100%;
+          cursor: pointer;
+          appearance: none;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+        }
       }
     }
   }
