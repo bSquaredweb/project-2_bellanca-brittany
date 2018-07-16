@@ -4,7 +4,7 @@
 [Paperless Planner on GitHub](https://github.com/bSquaredweb/project-2_bellanca-brittany)
 
 #### Link to website
-Will be updated during part 3
+Will be updated during Part 3
 
 #### Instructions on how to view
 1. `git clone` the repository to view it locally.
@@ -15,7 +15,7 @@ Will be updated during part 3
 
 #### Resources
 - [Using Flexbox for Sticky Footer](https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/): This is an awesome, quick solution that uses flexbox to get that footer stuck to the bottom!!!!!!
-- [A CodePen](https://codepen.io/raubaca/pen/VejpQP): Used this CodePen and help from our classmate Hanna to learn how to style select fields!
+- [A CodePen](https://codepen.io/raubaca/pen/VejpQP): Used this CodePen and help from our classmate Hanna to learn how to style select fields! And now I don't hate the select!
 
 #### Deductions
 > I reviewed the list of deductions for this project and in the syllabus.
