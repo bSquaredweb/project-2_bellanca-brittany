@@ -31,7 +31,7 @@ h5 {
 }
 
 h6 {
-  @include font-type($primary-font, normal, normal, $blue, 14px);
+  @include font-type($primary-font, normal, 600, $blue, 16px);
 }
 
 p, li {
