@@ -2,7 +2,7 @@
 // ========================================
 
 .chip {
-  @include font-type($primary-font, normal, 600);
+  @include font-type($primary-font, normal, 600, $black, 16px);
   display: flex;
   align-items: center;
   background-color: $blue;

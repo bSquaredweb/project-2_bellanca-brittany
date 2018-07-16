@@ -2,10 +2,12 @@
 // ========================================
 
 // Font Styles
-@mixin font-type($type, $style, $weight) {
+@mixin font-type($type, $style, $weight, $font-color, $font-size) {
   font-family: $type;
   font-style:  $style;
   font-weight: $weight;
+  color: $font-color;
+  font-size: $font-size;
 }
 
 // Text Colors

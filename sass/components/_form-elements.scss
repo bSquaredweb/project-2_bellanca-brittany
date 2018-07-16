@@ -23,17 +23,13 @@
 
     // Label Styling -- Delete this if you are not using a label
     label {
-      @include font-type($primary-font, normal, 600);
-      font-size: 16px;
-      color: $brown;
+      @include font-type($primary-font, normal, 600, $brown, 16px);
     }
 
     // Basic Form Input Styling
     input {
-      @include font-type($primary-font, normal, normal);
+      @include font-type($primary-font, normal, normal, $blue, 16px);
       background-color: $white;
-      font-size: 16px;
-      color: $blue;
       border-color: transparent;
       border-bottom: 2px solid $blue;
       padding: $spacer-s;
@@ -86,10 +82,8 @@
 
         // Select Form Input Styling
         select {
-          @include font-type($primary-font, normal, normal);
+          @include font-type($primary-font, normal, normal, $blue, 16px);
           background-color: $white;
-          font-size: 16px;
-          color: $blue;
           padding: $spacer-xs $spacer-s;
           border-radius: 0;
           width: 100%;

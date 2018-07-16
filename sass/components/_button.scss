@@ -2,7 +2,7 @@
 // ========================================
 
 .button {
-  @include font-type($primary-font, normal, 600);
+  @include font-type($primary-font, normal, 600, $black, 16px);
 
   &--primary {
     @include buttons($blue, $white, $blue);

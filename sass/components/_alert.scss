@@ -2,7 +2,7 @@
 // ========================================
 
 .alert {
-  @include font-type($primary-font, normal, 600);
+  @include font-type($primary-font, normal, 600, $black, 16px);
 
   &--error {
     @include alert(lighten($red, 30%), darken($red, 5%), $red);
