@@ -9,7 +9,8 @@
 
 h1 {
   @include font-type($secondary-font, normal, normal, $white, 40px);
-  background-color: $blue;
+  background: url('../img/banner.png') center center no-repeat;
+  text-align: center;
 }
 
 h2 {
