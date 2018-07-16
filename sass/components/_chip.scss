@@ -2,33 +2,46 @@
 // ========================================
 
 .chip {
-  @include font-type($primary-font, normal, 600, $black, 16px);
+  @include font-type($primary-font, normal, 600, $blue, 16px);
   display: flex;
+  flex-direction: column;
   align-items: center;
-  background-color: $blue;
   padding: $spacer-s;
   width: 205px;
   border-radius: 5px;
 
   &__avatar {
-    width: 50px;
-    height: 50px;
+    width: 100px;
+    height: 100px;
     background-color: $green;
     color: $white;
     border-radius: 50%;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    margin-right: $spacer-s;
+    margin-bottom: $spacer-lg;
   }
 
   &__text-container {
     display: inline-flex;
     flex-direction: column;
-    color: $white;
+    align-items: center;
   }
 
   &__text-description {
     font-weight: 400;
+    color: $green;
+    margin-top: $spacer-xs;
+  }
+
+  @include media($large) {
+    &__avatar {
+      width: 140px;
+      height: 140px;
+    }
+
+    &__text-container {
+      font-size: 20px;
+    }
   }
 }
