@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Paperless Planner</title>
     <link href="https://fonts.googleapis.com/css?family=Handlee|Open+Sans:400,600,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-    <link rel="shortcut icon" href="img/favicon.png">
+    <link href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous" rel="stylesheet">
+    <link href="img/favicon.png" rel="shortcut icon">
+    <link href="css/drawer.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
   </head>
-  <body class="body">
-    <header class="header">
+  <body class="body drawer drawer--top">
+    <!-- <header class="header">
       <img src="img/logo.png" alt="Paperless Planner Logo" class="header__logo">
       <nav class="header__nav">
         <div class="button button--secondary">
@@ -21,9 +22,25 @@
           <li class="header__list__item"><a href="about.html">Learn More</a></li>
           <li class="header__list__item"><a href="contact.html">Contact Us</a></li>
         </ul>
-        <i class="fas fa-bars fa-2x"></i>
+      </nav>
+    </header> -->
+
+    <header class="header">
+      <img src="img/logo.png" alt="Paperless Planner Logo" class="header__logo">
+      <button type="button" class="drawer-toggle drawer-hamburger">
+        <span class="sr-only">toggle navigation</span>
+        <span class="drawer-hamburger-icon"></span>
+      </button>
+      <nav class="drawer-nav header__nav" role="navigation">
+        <ul class="drawer-menu header__list">
+          <li><a class="header__list__item" href="#">Brand</a></li>
+          <li><a class="header__list__item" href="#">Nav1</a></li>
+          <li><a class="header__list__item" href="#">Nav2</a></li>
+        </ul>
       </nav>
     </header>
+
+
     <footer class="footer">
       <img src="img/logo_white.png" alt="Paperless Planner Logo - White" class="footer__img">
       <nav class="footer__nav">
@@ -63,6 +80,9 @@
           ">Brittany Bellanca.</a> &copy;2018</p>
       </div>
     </footer>
-    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/iscroll.js"></script>
+    <script src="js/drawer.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
