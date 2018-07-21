@@ -56,12 +56,8 @@ a {
     border-bottom: none;
 
     &:hover {
-      color: $brown;
+      color: darken($green, 25%);
       border-bottom: none;
-    }
-
-    &--white {
-      color: $white;
     }
   }
 }
@@ -72,5 +68,9 @@ a {
   &:hover {
     color: darken($green, 25%);
     transition: .3s;
+  }
+
+  &--alt {
+    color: $white;
   }
 }
