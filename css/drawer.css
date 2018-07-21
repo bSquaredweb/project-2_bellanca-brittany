@@ -22,38 +22,7 @@
   width: 16.25rem;
   height: 100%;
   color: #222;
-  background-color: #fff;
-}
-
-.drawer-brand {
-  font-size: 1.5rem;
-  font-weight: bold;
-  line-height: 3.75rem;
-  display: block;
-  padding-right: .75rem;
-  padding-left: .75rem;
-  text-decoration: none;
-  color: #222;
-}
-
-.drawer-menu {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.drawer-menu-item {
-  font-size: 1rem;
-  display: block;
-  padding: .75rem;
-  text-decoration: none;
-  color: #222;
-}
-
-.drawer-menu-item:hover {
-  text-decoration: underline;
-  color: #555;
-  background-color: transparent;
+  background-color: #F8F8F8;
 }
 
 /*! overlay */
@@ -81,7 +50,7 @@
   top: -100%;
   left: 0;
   width: 100%;
-  height: auto;
+  height: 400px;
   max-height: 100%;
   -webkit-transition: top .6s cubic-bezier(0.190, 1.000, 0.220, 1.000);
   transition: top .6s cubic-bezier(0.190, 1.000, 0.220, 1.000);
@@ -148,8 +117,8 @@
   box-sizing: content-box;
   width: 2rem;
   padding: 0;
-  padding-top: 18px;
-  padding-right: .75rem;
+  padding-top: 24px;
+  padding-right: 1rem;
   padding-bottom: 30px;
   padding-left: .75rem;
   -webkit-transition: all .6s cubic-bezier(0.190, 1.000, 0.220, 1.000);
@@ -179,7 +148,7 @@
   height: 2px;
   -webkit-transition: all .6s cubic-bezier(0.190, 1.000, 0.220, 1.000);
   transition: all .6s cubic-bezier(0.190, 1.000, 0.220, 1.000);
-  background-color: #222;
+  background-color: #412D2F;
 }
 
 .drawer-hamburger-icon:before,
