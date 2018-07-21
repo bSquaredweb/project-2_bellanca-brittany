@@ -9,12 +9,15 @@
 
 h1 {
   @include font-type($secondary-font, normal, normal, $white, 40px);
-  background: url('../img/banner.png') center center no-repeat;
   text-align: center;
 }
 
 h2 {
   @include font-type($secondary-font, normal, normal, $blue, 36px);
+  border-bottom: 2px solid $green;
+  text-align: center;
+  // padding-bottom: $spacer-xs;
+  // margin-bottom: $spacer-m;
 }
 
 h3 {
@@ -37,6 +40,14 @@ h6 {
 p, li {
   @include font-type($primary-font, normal, normal, $black, 16px);
   padding: $spacer-xs 0;
+}
+
+p {
+  text-align: center;
+
+  @include media($large) {
+    text-align: left;
+  }
 }
 
 a {
@@ -72,12 +83,5 @@ a {
 
   &--alt {
     color: $white;
-  }
-}
-
-.text {
-
-  &--center {
-    text-align: center;
   }
 }
