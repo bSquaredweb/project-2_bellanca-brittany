@@ -86,6 +86,10 @@
   }
 }
 
+.item-container {
+  margin: $spacer-m $reset-0;
+}
+
 .main {
   padding: $spacer-m;
   min-width: 290px;
@@ -93,6 +97,15 @@
 
   &__section {
     margin: $reset-0 $reset-0 $spacer-xxl;
+
+    &--index {
+      margin: $reset-0 $reset-0 $spacer-m;
+    }
+
+    &__app-demo {
+      width: 100%;
+      max-width: 520px;
+    }
 
     @include media($medium) {
       margin-right: $spacer-m;
