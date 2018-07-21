@@ -53,12 +53,24 @@ a {
   }
 
   &.alt {
-    color: $white;
     border-bottom: none;
 
     &:hover {
       color: $brown;
       border-bottom: none;
     }
+
+    &--white {
+      color: $white;
+    }
+  }
+}
+
+.fa-stack {
+  color: $green;
+
+  &:hover {
+    color: darken($green, 25%);
+    transition: .3s;
   }
 }

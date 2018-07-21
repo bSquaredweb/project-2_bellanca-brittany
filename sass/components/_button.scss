@@ -3,6 +3,7 @@
 
 .button {
   @include font-type($primary-font, normal, 600, $black, 16px);
+  margin-right: $spacer-xs;
 
   &--primary {
     @include buttons($blue, $white, $blue);
