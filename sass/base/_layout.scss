@@ -103,6 +103,10 @@
       padding: $spacer-lg $reset-0 $spacer-xs;
     }
 
+    &--intro {
+      margin: $spacer-m $spacer-s $spacer-xlg;
+    }
+
     &__title {
       background: url('../img/banner.png') center center no-repeat;
       height: 67px;
@@ -115,6 +119,10 @@
     &__app-demo {
       width: 100%;
       max-width: 520px;
+    }
+
+    &__article {
+      margin: $spacer-lg $reset-0;
     }
   }
 }
