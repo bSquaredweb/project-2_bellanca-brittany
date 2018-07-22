@@ -108,7 +108,11 @@
     }
 
     &--intro {
-      margin: $spacer-m $spacer-s $spacer-xlg;
+      margin: $spacer-m $spacer-s $reset-0;
+    }
+
+    h3 {
+      margin-top: $spacer-xlg;
     }
 
     &__title {
