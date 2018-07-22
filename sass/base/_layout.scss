@@ -137,6 +137,27 @@
       }
     }
   }
+
+  &__icons {
+    margin: $spacer-xlg $spacer-s $reset-0;
+  }
+}
+
+.circle {
+  background-color: lighten($gray, 1%);
+  height: 140px;
+  width: 140px;
+  border-radius: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: $spacer-s;
+
+  i {
+    color: $blue;
+    font-size: 70px;
+  }
 }
 
 .footer {
