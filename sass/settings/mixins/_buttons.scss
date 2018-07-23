@@ -9,6 +9,7 @@
   border-radius: 5px;
   display: inline-flex;
   transition: .3s;
+  justify-content: center;
 }
 
 @mixin button--hover($background-value) {

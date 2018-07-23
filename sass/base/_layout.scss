@@ -88,6 +88,13 @@
   margin: $spacer-lg $spacer-s;
 }
 
+.text {
+
+  &--left {
+    text-align: left;
+  }
+}
+
 .main {
   // padding: $spacer-m;
   // display: flex;
@@ -105,6 +112,10 @@
 
     &--about {
       padding: $spacer-lg $reset-0;
+    }
+
+    &--contact {
+      padding: $spacer-lg $reset-0 $spacer-xxl;
     }
 
     &--intro {

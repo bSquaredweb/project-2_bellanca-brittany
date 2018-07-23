@@ -31,4 +31,8 @@
       cursor: not-allowed;
     }
   }
+
+  &--form {
+    flex-grow: 1;
+  }
 }
