@@ -108,7 +108,7 @@
     }
 
     &--intro {
-      margin: $spacer-m $spacer-s $reset-0;
+      margin: $spacer-m $spacer-s $spacer-xlg;
     }
 
     h3 {
@@ -161,6 +161,25 @@
   i {
     color: $blue;
     font-size: 70px;
+  }
+}
+
+.testimonial {
+  background-color: lighten($gray, 1%);
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: $spacer-xxl;
+
+  &__text {
+    transform: translate(0, -12%);
+    padding: $reset-0 $spacer-m;
+
+    p {
+      text-align: left;
+    }
   }
 }
 
