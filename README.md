@@ -33,6 +33,7 @@
   - Part 4:
     - Work on responsive design for larger sizes
     - Add interactive element to homepage
+    - Make ready for in class presentation
   - Part 5:
     - Proof-read
     - Check over spacing, code, variables, etc. per deductions sheet
