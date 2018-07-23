@@ -16,8 +16,8 @@ h2 {
   @include font-type($secondary-font, normal, normal, $blue, 36px);
   border-bottom: 2px solid $green;
   text-align: center;
-  // padding-bottom: $spacer-xs;
-  // margin-bottom: $spacer-m;
+  margin-left: $spacer-m;
+  margin-right: $spacer-m;
 }
 
 h3 {

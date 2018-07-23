@@ -23,9 +23,7 @@
   // flex: none;
 
   &__logo {
-    padding: $spacer-s;
-    // max-width: 100px;
-    // height: 100%;
+    padding: $spacer-s $spacer-s $spacer-xxs $spacer-xs;
     width: 100%;
     max-width: 100px;
   }
