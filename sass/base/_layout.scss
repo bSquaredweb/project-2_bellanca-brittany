@@ -146,10 +146,14 @@
   }
 
   &__aside {
-    padding: $reset-0 $spacer-s $spacer-xxl;
+    padding: $spacer-xxl $spacer-s $spacer-xxl;
 
     h3 {
       margin-bottom: $spacer-lg;
+    }
+
+    &--about {
+      padding-top: $reset-0;
     }
   }
 
