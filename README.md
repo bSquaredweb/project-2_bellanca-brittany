@@ -29,9 +29,9 @@
   - Part 3:
     - Set up navigation & footer
     - Transfer bulk of copy
-    - Set up smallest size of size
+    - Set up and styled smallest screen size of site ONLY
   - Part 4:
-    - Work on responsive design for larger sizes
+    - Work on responsive design for other sizes
     - Add interactive element to homepage
     - Make ready for in class presentation
   - Part 5:
