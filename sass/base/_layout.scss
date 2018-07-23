@@ -132,13 +132,13 @@
     &__article {
       padding: $spacer-m $spacer-m;
     }
+  }
 
-    &--cta {
-      padding: $spacer-xxl $spacer-s;
+  &__aside {
+    padding: $reset-0 $spacer-s $spacer-xxl;
 
-      h3 {
-        margin-bottom: $spacer-lg;
-      }
+    h3 {
+      margin-bottom: $spacer-lg;
     }
   }
 
@@ -148,7 +148,7 @@
 }
 
 .circle {
-  background-color: lighten($gray, 1%);
+  background-color: lighten($gray, 2%);
   height: 140px;
   width: 140px;
   border-radius: 50%;
@@ -172,6 +172,7 @@
   flex-direction: column;
   align-items: center;
   margin-top: $spacer-xxl;
+  border-radius: 5px;
 
   &__text {
     transform: translate(0, -12%);

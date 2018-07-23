@@ -21,6 +21,17 @@
     align-items: center;
     justify-content: center;
     margin-bottom: $spacer-lg;
+    border: 2px solid $brown;
+
+    &--lauren {
+      background: url('../img/lauren.png') center center no-repeat;
+      background-size: cover;
+    }
+
+    &--darnell {
+      background: url('../img/darnell.png') center center no-repeat;
+      background-size: cover;
+    }
   }
 
   &__text-container {
