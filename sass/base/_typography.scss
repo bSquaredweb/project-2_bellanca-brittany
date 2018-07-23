@@ -23,6 +23,8 @@ h2 {
 h3 {
   @include font-type($primary-font, normal, 700, $green, 26px);
   text-transform: uppercase;
+  margin-left: $spacer-m;
+  margin-right: $spacer-m;
 }
 
 h4 {
