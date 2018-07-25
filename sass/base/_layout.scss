@@ -2,7 +2,11 @@
 // This is where your layout of the project will go
 // ========================================
 
-.container {
+html {
+  scroll-behavior: smooth;
+}
+
+body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -10,23 +14,11 @@
 
 .header {
   min-width: 320px;
-  // display: flex;
-  // justify-content: flex-start;
-  // align-items: center;
-  // flex-direction: column;
-  // text-align: center;
-  // padding-bottom: $spacer-m;
-  // flex: none;
 
   &__logo {
     padding: $spacer-s $spacer-s $spacer-xxs $spacer-xs;
     width: 100%;
     max-width: 100px;
-  }
-
-  &__nav {
-    // width: 100%;
-    // max-width: 400px;
   }
 
   &__list {
@@ -50,32 +42,6 @@
       }
     }
   }
-
-  @include media($medium) {
-    flex-direction: row;
-    padding-bottom: $reset-0;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: $spacer-lg;
-
-    &__logo {
-      padding: $spacer-m $reset-0 $reset-0 $spacer-m;
-      max-width: 175px;
-    }
-
-    &__nav {
-      width: 50%;
-      max-width: 430px;
-    }
-  }
-
-  @include media($large) {
-    &__list {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-    }
-  }
 }
 
 .item-container {
@@ -90,10 +56,6 @@
 }
 
 .main {
-  // padding: $spacer-m;
-  // display: flex;
-  // flex-direction: column;
-  // align-items: center;
   flex: 1;
   text-align: center;
 
@@ -150,10 +112,6 @@
       padding-top: $reset-0;
     }
   }
-
-  &__icons {
-    margin: $spacer-xlg $spacer-s $reset-0;
-  }
 }
 
 .circle {
@@ -186,10 +144,7 @@
   &__text {
     transform: translate(0, -12%);
     padding: $reset-0 $spacer-m;
-
-    p {
-      text-align: left;
-    }
+    text-align: left;
   }
 }
 
