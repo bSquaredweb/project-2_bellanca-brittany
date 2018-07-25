@@ -116,10 +116,6 @@
       margin: $spacer-m $spacer-s $spacer-xlg;
     }
 
-    h3 {
-      margin-top: $spacer-xlg;
-    }
-
     &__title {
       background: url('../img/banner.png') center center no-repeat;
       height: 67px;
@@ -132,6 +128,10 @@
     &__app-demo {
       width: 100%;
       max-width: 520px;
+    }
+
+    &__wrap {
+      margin: $spacer-xlg $spacer-s $reset-0;
     }
 
     &__article {
