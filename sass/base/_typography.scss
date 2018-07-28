@@ -16,15 +16,15 @@ h2 {
   @include font-type($secondary-font, normal, normal, $blue, 36px);
   border-bottom: 2px solid $green;
   text-align: center;
-  margin-left: $spacer-m;
-  margin-right: $spacer-m;
+  margin-left: $spacer-s;
+  margin-right: $spacer-s;
 }
 
 h3 {
   @include font-type($primary-font, normal, 700, $green, 26px);
   text-transform: uppercase;
-  margin-left: $spacer-m;
-  margin-right: $spacer-m;
+  margin-left: $spacer-s;
+  margin-right: $spacer-s;
 }
 
 h4 {

@@ -10,6 +10,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  min-width: 320px;
 }
 
 .header {
@@ -41,17 +42,6 @@ body {
         margin-bottom: $spacer-lg;
       }
     }
-  }
-}
-
-.item-container {
-  margin: $spacer-lg $spacer-s;
-}
-
-.text {
-
-  &--left {
-    text-align: left;
   }
 }
 
@@ -97,12 +87,12 @@ body {
     }
 
     &__article {
-      padding: $spacer-m $spacer-m;
+      margin: $spacer-m $reset-0;
     }
   }
 
   &__aside {
-    padding: $spacer-xxl $spacer-s $spacer-xxl;
+    padding: $spacer-xxl $spacer-s;
 
     h3 {
       margin-bottom: $spacer-lg;
@@ -111,6 +101,21 @@ body {
     &--about {
       padding-top: $reset-0;
     }
+  }
+}
+
+.row {
+  padding: $reset-0 $spacer-s;
+}
+
+.item-container {
+  margin: $spacer-lg $reset-0;
+}
+
+.text {
+
+  &--left {
+    text-align: left;
   }
 }
 
