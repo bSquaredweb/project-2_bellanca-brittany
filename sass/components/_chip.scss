@@ -12,6 +12,8 @@
 
   @include media($medium) {
     min-width: 175px;
+    margin-top: $reset-0;
+    margin: $spacer-s;
   }
 
   &__avatar {
@@ -71,9 +73,14 @@
 
   @include media($medium) {
     flex-direction: row;
+    margin-top: $spacer-xlg;
   }
 
   &__text {
     margin: $spacer-m;
+
+    @include media($medium) {
+      margin: $spacer-s;
+    }
   }
 }
