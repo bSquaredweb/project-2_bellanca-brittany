@@ -6,11 +6,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: $spacer-s;
   width: 205px;
   border-radius: 5px;
-  position: relative;
-  top: -55px;
+  margin-top: -13%;
 
   @include media($medium) {
     min-width: 175px;
@@ -25,7 +23,7 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: $spacer-lg;
+    margin-bottom: $spacer-m;
     border: 2px solid $brown;
 
     &--lauren {
@@ -68,17 +66,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: $spacer-xxl;
+  margin-top: $spacer-3xl;
   border-radius: 5px;
-  position: relative;
 
   @include media($medium) {
     flex-direction: row;
-    padding: $spacer-m;
   }
 
   &__text {
-    @include sides-marg($spacer-m);
-    position: relative;
+    margin: $spacer-m;
   }
 }
