@@ -2,6 +2,7 @@
 // ========================================
 
 .form {
+  @include sides-marg($spacer-s, $spacer-s);
 
   :focus {
     outline-color: $green;
@@ -21,13 +22,11 @@
       width: 40%;
     }
 
-    // Label Styling -- Delete this if you are not using a label
     label {
       @include font-type($primary-font, normal, 600, $brown, 16px);
       text-align: left;
     }
 
-    // Basic Form Input Styling
     input {
       @include font-type($primary-font, normal, normal, $blue, 16px);
       background-color: $white;

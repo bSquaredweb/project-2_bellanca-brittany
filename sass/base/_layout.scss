@@ -152,7 +152,7 @@ body {
 
   &__text {
     transform: translate(0, -12%);
-    @include sides-marg($spacer-m, $spacer-m)
+    @include sides-marg($spacer-m, $spacer-m);
   }
 }
 
@@ -161,7 +161,7 @@ body {
   text-align: center;
 
   &__main {
-    @include top-bottom-marg($spacer-lg, $spacer-lg)
+    @include top-bottom-marg($spacer-lg, $spacer-lg);
   }
 
   &__img {
@@ -177,5 +177,9 @@ body {
         margin-bottom: $spacer-lg;
       }
     }
+  }
+
+  &__edu-statement {
+    padding: $spacer-xs $spacer-m;
   }
 }
