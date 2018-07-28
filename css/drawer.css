@@ -130,6 +130,12 @@
   background-color: transparent;
 }
 
+@media (min-width: 675px) {
+  .drawer-hamburger {
+    padding-top: 25px;
+  }
+}
+
 .drawer-hamburger:hover {
   cursor: pointer;
   background-color: transparent;
