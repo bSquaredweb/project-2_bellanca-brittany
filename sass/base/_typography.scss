@@ -57,7 +57,7 @@ a {
   text-decoration: none;
   transition: .3s;
   border-bottom: 2px solid transparent;
-  padding: 0 $spacer-xs 2px;
+  padding: $reset-0 $spacer-xs $spacer-xxs;
 
   &:hover {
     color: darken($green, 25%);
