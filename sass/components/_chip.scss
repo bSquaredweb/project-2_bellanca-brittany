@@ -9,7 +9,12 @@
   padding: $spacer-s;
   width: 205px;
   border-radius: 5px;
-  transform: translate(0, -25%);
+  position: relative;
+  top: -55px;
+
+  @include media($medium) {
+    min-width: 175px;
+  }
 
   &__avatar {
     width: 100px;
@@ -32,12 +37,21 @@
       background: url('../img/darnell.png') center center no-repeat;
       background-size: cover;
     }
+
+    @include media($large) {
+      width: 140px;
+      height: 140px;
+    }
   }
 
   &__text-container {
     display: inline-flex;
     flex-direction: column;
     align-items: center;
+
+    @include media($large) {
+      font-size: 20px;
+    }
   }
 
   &__text-description {
@@ -45,15 +59,26 @@
     color: $green;
     margin-top: $spacer-xs;
   }
+}
 
-  @include media($large) {
-    &__avatar {
-      width: 140px;
-      height: 140px;
-    }
+.testimonial {
+  background-color: lighten($gray, 1%);
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: $spacer-xxl;
+  border-radius: 5px;
+  position: relative;
 
-    &__text-container {
-      font-size: 20px;
-    }
+  @include media($medium) {
+    flex-direction: row;
+    padding: $spacer-m;
+  }
+
+  &__text {
+    @include sides-marg($spacer-m);
+    position: relative;
   }
 }

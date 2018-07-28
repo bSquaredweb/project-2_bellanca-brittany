@@ -2,7 +2,10 @@
 // ========================================
 
 .form {
-  @include sides-marg($spacer-s, $spacer-s);
+  @include sides-marg($spacer-s);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   :focus {
     outline-color: $green;
@@ -13,14 +16,6 @@
     flex-direction: column;
     width: 100%;
     margin-bottom: $spacer-lg;
-
-    @include media($medium) {
-      width: 60%;
-    }
-
-    @include media($large) {
-      width: 40%;
-    }
 
     label {
       @include font-type($primary-font, normal, 600, $brown, 16px);

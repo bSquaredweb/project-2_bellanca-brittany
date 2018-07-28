@@ -1,6 +1,6 @@
-@mixin sides-marg($right, $left) {
-  margin-right: $right;
-  margin-left: $left;
+@mixin sides-marg($side) {
+  margin-right: $side;
+  margin-left: $side;
 }
 
 @mixin top-bottom-marg($top, $bottom) {

@@ -51,11 +51,12 @@ body {
   &__section {
     @include top-bottom-padd($spacer-xxl, $spacer-xxl);
 
+    // container = sides
     &__container {
-      @include sides-marg($spacer-s, $spacer-s);
+      @include sides-marg($spacer-s);
 
       @include media($medium) {
-        @include sides-marg($spacer-xlg, $spacer-xlg);
+        @include sides-marg($spacer-xlg);
       }
     }
 
@@ -89,6 +90,7 @@ body {
       max-width: 520px;
     }
 
+    // wrap = top & bottom
     &__wrap {
       @include top-bottom-marg($spacer-xlg, $reset-0);
     }
@@ -99,7 +101,7 @@ body {
   }
 
   &__aside {
-    @include sides-marg($spacer-s, $spacer-s);
+    @include sides-marg($spacer-s);
     @include top-bottom-padd($spacer-xxl, $spacer-xxl);
 
     h3 {
@@ -116,13 +118,6 @@ body {
   @include top-bottom-marg($spacer-lg, $spacer-lg);
 }
 
-.text {
-
-  &--left {
-    text-align: left;
-  }
-}
-
 .circle {
   background-color: lighten($gray, 2%);
   height: 140px;
@@ -137,22 +132,6 @@ body {
   i {
     color: $blue;
     font-size: 70px;
-  }
-}
-
-.testimonial {
-  background-color: lighten($gray, 1%);
-  width: 90%;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: $spacer-xxl;
-  border-radius: 5px;
-
-  &__text {
-    transform: translate(0, -12%);
-    @include sides-marg($spacer-m, $spacer-m);
   }
 }
 
