@@ -16,6 +16,16 @@ body {
 .header {
   min-width: 320px;
 
+  @include media($large) {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: $reset-0;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: $spacer-lg;
+    margin-right: $spacer-m;
+  }
+
   &__logo {
     padding: $spacer-s $reset-0 $spacer-xxs $spacer-xs;
     width: 100%;
@@ -23,6 +33,11 @@ body {
 
     @include media($medium) {
       max-width: 125px;
+    }
+
+    @include media($large) {
+      max-width: 150px;
+      padding: $spacer-m $reset-0 $reset-0 $spacer-m;
     }
   }
 
@@ -33,6 +48,13 @@ body {
     align-items: center;
     min-height: 450px;
 
+    @include media($large) {
+      @include top-bottom-marg($spacer-s, $spacer-s);
+      flex-direction: row;
+      min-height: $reset-0;
+      justify-content: flex-end;
+    }
+
     &__logo {
       width: 100%;
       max-width: 125px;
@@ -40,6 +62,11 @@ body {
 
     &__item {
       margin-bottom: $spacer-s;
+
+      @include media($large) {
+        margin-left: $spacer-lg;
+        margin-bottom: $reset-0;
+      }
 
       &--extra-space {
         margin-bottom: $spacer-lg;
@@ -201,5 +228,23 @@ body {
 
   &__edu-statement {
     padding: $spacer-xs $spacer-m;
+  }
+}
+
+.drawer-hamburger, .drawer-nav {
+
+  @include media($large) {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+.desktop-nav {
+  display: none;
+  visibility: hidden;
+
+  @include media($large) {
+    display: block;
+    visibility: visible;
   }
 }

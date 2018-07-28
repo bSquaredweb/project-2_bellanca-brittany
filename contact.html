@@ -17,7 +17,7 @@
         <span class="sr-only">toggle navigation</span>
         <span class="drawer-hamburger-icon"></span>
       </button>
-      <nav class="drawer-nav header__nav" role="navigation">
+      <nav class="drawer-nav header__nav">
         <ul class="drawer-menu header__list">
           <li class="header__list__item">
             <a class="alt" href="index.html">
@@ -65,6 +65,29 @@
           </li>
         </ul>
       </nav>
+      <nav class="header__nav desktop-nav">
+        <ul class="header__list">
+          <li class="header__list__item">
+            <a href="index.html">Home</a>
+          </li>
+          <li class="header__list__item">
+            <a href="about.html">Learn More</a>
+          </li>
+          <li class="header__list__item">
+            <a href="contact.html">Contact Us</a>
+          </li>
+          <li class="header__list__item">
+            <a href="#">
+              Log In
+            </a>
+          </li>
+          <li class="header__list__item">
+            <button class="button button--primary">
+              Get Started Now!
+            </button>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main class="main">
       <section class="main__section main__section--first main__section--contact">
@@ -88,7 +111,7 @@
               </div>
               <div class="form__field">
                 <label for="phoneNumber">Phone Number</label>
-                <input type="phone" name="phoneNumber" id="phoneNumber">
+                <input type="tel" name="phoneNumber" id="phoneNumber">
               </div>
               <div class="form__field form__field--select">
                 <label for="contactMethod">Preferred Contact Method</label>
