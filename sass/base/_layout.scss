@@ -20,6 +20,10 @@ body {
     padding: $spacer-s $reset-0 $spacer-xxs $spacer-xs;
     width: 100%;
     max-width: 100px;
+
+    @include media($medium) {
+      max-width: 125px;
+    }
   }
 
   &__list {
@@ -93,10 +97,22 @@ body {
     // wrap = top & bottom
     &__wrap {
       @include top-bottom-marg($spacer-xlg, $reset-0);
+
+      &--icons {
+        @include media($medium) {
+          display: flex;
+          justify-content: center;
+        }
+      }
     }
 
     &__article {
       @include top-bottom-marg($spacer-m, $reset-0);
+
+      @include media($medium) {
+        @include sides-marg(auto);
+        max-width: 675px;
+      }
     }
   }
 
@@ -129,9 +145,34 @@ body {
   align-items: center;
   margin-bottom: $spacer-s;
 
+  @include media($medium) {
+    margin: $reset-0;
+
+    &__wrap {
+      width: 30%;
+      display: flex;
+      justify-content: flex-end;
+      margin-right: $spacer-m;
+    }
+  }
+
   i {
     color: $blue;
     font-size: 70px;
+  }
+
+  @include media($medium) {
+    &__text {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      width: 40%;
+      justify-content: center;
+
+      p {
+        text-align: left;
+      }
+    }
   }
 }
 
