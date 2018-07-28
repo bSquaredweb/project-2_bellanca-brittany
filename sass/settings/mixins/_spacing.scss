@@ -1,0 +1,14 @@
+@mixin sides-marg($right, $left) {
+  margin-right: $right;
+  margin-left: $left;
+}
+
+@mixin top-bottom-marg($top, $bottom) {
+  margin-top: $top;
+  margin-bottom: $bottom;
+}
+
+@mixin top-bottom-padd($top, $bottom) {
+  padding-top: $top;
+  padding-bottom: $bottom;
+}

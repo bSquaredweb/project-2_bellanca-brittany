@@ -17,16 +17,16 @@ body {
   min-width: 320px;
 
   &__logo {
-    padding: $spacer-s $spacer-s $spacer-xxs $spacer-xs;
+    padding: $spacer-s $reset-0 $spacer-xxs $spacer-xs;
     width: 100%;
     max-width: 100px;
   }
 
   &__list {
+    @include top-bottom-marg($spacer-xlg, $spacer-xlg);
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: $spacer-xlg $reset-0;
     min-height: 450px;
 
     &__logo {
@@ -49,18 +49,26 @@ body {
   text-align: center;
 
   &__section {
-    padding: $spacer-xxl $reset-0;
+    @include top-bottom-padd($spacer-xxl, $spacer-xxl);
+
+    &__container {
+      @include sides-marg($spacer-s, $spacer-s);
+
+      @include media($medium) {
+        @include sides-marg($spacer-xlg, $spacer-xlg);
+      }
+    }
+
+    &--first {
+      @include top-bottom-padd($spacer-lg, $spacer-xxl);
+    }
 
     &--index {
-      padding: $spacer-lg $reset-0 $spacer-xs;
+      padding-bottom: $spacer-xs;
     }
 
     &--about {
-      padding: $spacer-lg $reset-0;
-    }
-
-    &--contact {
-      padding: $spacer-lg $reset-0 $spacer-xxl;
+      padding-bottom: $spacer-lg;
     }
 
     &--intro {
@@ -82,16 +90,17 @@ body {
     }
 
     &__wrap {
-      margin: $spacer-xlg $spacer-s $reset-0;
+      @include top-bottom-marg($spacer-xlg, $reset-0);
     }
 
     &__article {
-      margin: $spacer-m $reset-0;
+      @include top-bottom-marg($spacer-m, $reset-0);
     }
   }
 
   &__aside {
-    padding: $spacer-xxl $spacer-s;
+    @include sides-marg($spacer-s, $spacer-s);
+    @include top-bottom-padd($spacer-xxl, $spacer-xxl);
 
     h3 {
       margin-bottom: $spacer-lg;
@@ -103,12 +112,8 @@ body {
   }
 }
 
-.row {
-  padding: $reset-0 $spacer-s;
-}
-
 .item-container {
-  margin: $spacer-lg $reset-0;
+  @include top-bottom-marg($spacer-lg, $spacer-lg);
 }
 
 .text {
@@ -147,7 +152,7 @@ body {
 
   &__text {
     transform: translate(0, -12%);
-    padding: $reset-0 $spacer-m;
+    @include sides-marg($spacer-m, $spacer-m)
   }
 }
 
@@ -156,7 +161,7 @@ body {
   text-align: center;
 
   &__main {
-    margin: $spacer-lg $reset-0;
+    @include top-bottom-marg($spacer-lg, $spacer-lg)
   }
 
   &__img {
