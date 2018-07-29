@@ -77,25 +77,16 @@ a {
   &__icon {
     color: $white;
 
+    &--green {
+      color: $green;
+    }
+
     &:hover {
       color: darken($green, 25%);
       transition: .3s;
     }
   }
 }
-
-// .fa-stack {
-//   color: $green;
-//
-//   &:hover {
-//     color: darken($green, 25%);
-//     transition: .3s;
-//   }
-//
-//   &--alt {
-//     color: $white;
-//   }
-// }
 
 .text {
 

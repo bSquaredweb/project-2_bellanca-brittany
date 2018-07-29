@@ -34,26 +34,32 @@
             <a href="contact.html">Contact Us</a>
           </li>
           <li class="header__list__item header__list__item--extra-space">
-            <div class="social-media">
-              <a class="alt" href="http://facebook.com" target="_blank">
-                <span class="social-media__icon fa-stack fa-1x">
-                  <i class="far fa-circle fa-stack-2x"></i>
-                  <i class="fab fa-facebook-f fa-stack-1x"></i>
-                </span>
-              </a>
-              <a class="alt" href="http://twitter.com" target="_blank">
-                <span class="social-media__icon fa-stack fa-1x">
-                  <i class="far fa-circle fa-stack-2x"></i>
-                  <i class="fab fa-twitter fa-stack-1x"></i>
-                </span>
-              </a>
-              <a class="alt" href="http://instagram.com" target="_blank">
-                <span class="social-media__icon fa-stack fa-1x">
-                  <i class="far fa-circle fa-stack-2x"></i>
-                  <i class="fab fa-instagram fa-stack-1x"></i>
-                </span>
-              </a>
-            </div>
+            <ul class="header__social-media">
+              <li class="header__social-media__item">
+                  <a class="alt" href="http://facebook.com" target="_blank">
+                    <span class="social-media__icon social-media__icon--green fa-stack fa-1x">
+                      <i class="far fa-circle fa-stack-2x"></i>
+                      <i class="fab fa-facebook-f fa-stack-1x"></i>
+                    </span>
+                  </a>
+              </li>
+              <li class="header__social-media__item">
+                <a class="alt" href="http://twitter.com" target="_blank">
+                  <span class="social-media__icon social-media__icon--green fa-stack fa-1x">
+                    <i class="far fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-twitter fa-stack-1x"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="header__social-media__item">
+                <a class="alt" href="http://instagram.com" target="_blank">
+                  <span class="social-media__icon social-media__icon--green fa-stack fa-1x">
+                    <i class="far fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-instagram fa-stack-1x"></i>
+                  </span>
+                </a>
+              </li>
+            </ul>
           </li>
           <li class="header__list__item">
             <button class="button button--secondary">
@@ -61,6 +67,29 @@
             </button>
             <button class="button button--primary">
               Download App
+            </button>
+          </li>
+        </ul>
+      </nav>
+      <nav class="header__nav desktop-nav">
+        <ul class="header__list">
+          <li class="header__list__item">
+            <a href="index.html">Home</a>
+          </li>
+          <li class="header__list__item">
+            <a href="about.html">Learn More</a>
+          </li>
+          <li class="header__list__item">
+            <a href="contact.html">Contact Us</a>
+          </li>
+          <li class="header__list__item">
+            <a href="#">
+              Log In
+            </a>
+          </li>
+          <li class="header__list__item">
+            <button class="button button--primary">
+              Get Started Now!
             </button>
           </li>
         </ul>
@@ -119,7 +148,7 @@
             <p>Paperless Planner opens up a whole new world of planner possibilities — digital artistry, messy handwriting cures, etc. Check out some of our favorite perks to Paperless Planner!</p>
           </div>
           <article class="main__section__article main__interactive-element">
-            <p>placeholder</p>
+            <h3>placeholder</h3>
           </article>
         </div>
       </section>
@@ -132,13 +161,11 @@
     </main>
     <footer class="footer background--green">
       <div class="footer__main">
+        <a href="index.html" class="alt">
+          <img src="img/logo_white.png" alt="Paperless Planner Logo - White" class="footer__img">
+        </a>
         <nav class="footer__nav">
-          <ul class="footer_list">
-            <li>
-              <a href="index.html" class="alt">
-                <img src="img/logo_white.png" alt="Paperless Planner Logo - White" class="footer__img">
-              </a>
-            </li>
+          <ul class="footer__list">
             <li class="footer__list__item">
               <a class="alt text--white" href="index.html">Home</a>
             </li>
@@ -151,45 +178,62 @@
             <li class="footer__list__item">
               <a class="alt text--white" href="#">Log In</a>
             </li>
-            <li class="footer__list__item footer__list__item--extra-space">
+            <li class="footer__list__item">
               <a class="alt text--white" href="#">Download App</a>
             </li>
-            <li class="footer__list__item footer__list__item--extra-space">
-              <div class="footer__social-media">
-                <a class="alt" href="http://facebook.com" target="_blank">
-                  <span class="social-media__icon fa-stack fa-1x fa-stack--alt">
+          </ul>
+        </nav>
+        <div class="footer__social-media">
+          <ul class="footer__social-media__list">
+            <li class="footer__social-media__list__item">
+              <a class="alt" href="http://facebook.com" target="_blank">
+                <div class="social-media__icon">
+                  <span class="fa-stack fa-1x">
                     <i class="far fa-circle fa-stack-2x"></i>
                     <i class="fab fa-facebook-f fa-stack-1x"></i>
                   </span>
-                </a>
-                <a class="alt" href="http://twitter.com" target="_blank">
-                  <span class="social-media__icon fa-stack fa-1x fa-stack--alt">
+                  <span class="hidden">Facebook</span>
+                </div>
+              </a>
+            </li>
+            <li class="footer__social-media__list__item">
+              <a class="alt text--white" href="http://twitter.com" target="_blank">
+                <div class="social-media__icon">
+                  <span class="fa-stack fa-1x">
                     <i class="far fa-circle fa-stack-2x"></i>
                     <i class="fab fa-twitter fa-stack-1x"></i>
                   </span>
-                </a>
-                <a class="alt" href="http://instagram.com" target="_blank">
-                  <span class="social-media__icon fa-stack fa-1x fa-stack--alt">
+                  <span class="hidden">Twitter</span>
+                </div>
+              </a>
+            </li>
+            <li class="footer__social-media__list__item">
+              <a class="alt" href="http://instagram.com" target="_blank">
+                <div class="social-media__icon">
+                  <span class="fa-stack fa-1x">
                     <i class="far fa-circle fa-stack-2x"></i>
                     <i class="fab fa-instagram fa-stack-1x"></i>
                   </span>
-                </a>
-              </div>
+                  <span class="hidden">Instagram</span>
+                </div>
+              </a>
             </li>
           </ul>
-          <div class="footer__contact-info">
-            <p class="text--white text--small">
-              Paperless Planner HQ<br />
-              123 First Street<br />
+        </div>
+        <div class="footer__contact-info">
+          <p class="text--white text--small">
+            <a href="https://www.google.com/maps" target="_blank" class="alt text--white text--small">
+              Paperless Planner HQ<br>
+              123 First Street<br>
               Orlando, Florida 33333
-            </p>
-            <p><a class="alt text--white text--small" href="tel:13212625261">1(800) 555-5555</a></p>
-            <p><a class="alt text--white text--small" href="mailto:bbellanca@ufl.edu">hello@paperlessplanner.com</a></p>
-          </div>
-        </nav>
+            </a>
+          </p>
+          <p><a class="alt text--white text--small" href="tel:13212625261">1(800) 555-5555</a></p>
+          <p><a class="alt text--white text--small" href="mailto:bbellanca@ufl.edu">hello@paperlessplanner.com</a></p>
+        </div>
       </div>
       <div class="footer__edu-statement background--white">
-        <p class="text--small">This site is for educational purposes only and all intellectual property included solely belongs to its creater, <a href="http://brittanybellanca" target="_blank">Brittany Bellanca</a>  &copy;2018</p>
+        <p class="text--small text--center">This site is for educational purposes only and all intellectual property included solely belongs to its creater, <a href="http://brittanybellanca" target="_blank">Brittany Bellanca</a>  &copy;2018</p>
       </div>
     </footer>
     <script src="js/jquery-3.3.1.min.js"></script>
