@@ -8,12 +8,17 @@
   align-items: center;
   width: 205px;
   border-radius: 5px;
-  margin-top: -13%;
+  margin-top: -10%;
 
   @include media($medium) {
     min-width: 175px;
     margin-top: $reset-0;
     margin: $spacer-s;
+  }
+
+  @include media($large) {
+    margin: $reset-0;
+    margin-top: -10%;
   }
 
   &__avatar {
@@ -58,29 +63,5 @@
     font-weight: 400;
     color: $green;
     margin-top: $spacer-xs;
-  }
-}
-
-.testimonial {
-  background-color: lighten($gray, 1%);
-  width: 90%;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: $spacer-3xl;
-  border-radius: 5px;
-
-  @include media($medium) {
-    flex-direction: row;
-    margin-top: $spacer-xlg;
-  }
-
-  &__text {
-    margin: $spacer-m;
-
-    @include media($medium) {
-      margin: $spacer-s;
-    }
   }
 }

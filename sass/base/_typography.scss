@@ -42,10 +42,6 @@ p, li {
 
 p {
   text-align: center;
-
-  @include media($large) {
-    text-align: left;
-  }
 }
 
 a {
@@ -100,9 +96,5 @@ a {
 
   &--left {
     text-align: left;
-  }
-
-  &--center {
-    text-align: center;
   }
 }

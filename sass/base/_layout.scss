@@ -150,14 +150,35 @@ body {
       max-width: 520px;
     }
 
-    // wrap = top & bottom
     &__wrap {
       @include top-bottom-marg($spacer-xlg, $reset-0);
 
+      h3 {
+
+        @include media($large) {
+          background-color: lighten($gray, 5%);
+        }
+      }
+
+      &--flex {
+
+        @include media($large) {
+          display: flex;
+        }
+      }
+
       &--icons {
+
         @include media($medium) {
           display: flex;
           justify-content: center;
+        }
+
+        @include media($large) {
+          @include sides-marg($spacer-m);
+          flex-direction: column;
+          justify-content: space-between;
+          width: calc(100% / 3);
         }
       }
     }
@@ -168,6 +189,20 @@ body {
       @include media($medium) {
         @include sides-marg(auto);
         max-width: 675px;
+      }
+
+      @include media($large) {
+        @include sides-marg($spacer-m);
+      }
+    }
+
+    &__nav {
+
+      &__item {
+
+        @include media($large) {
+          @include top-bottom-marg($spacer-m, $spacer-m);
+        }
       }
     }
   }
@@ -203,12 +238,22 @@ body {
 
   @include media($medium) {
     margin: $reset-0;
+  }
 
-    &__wrap {
+  &__wrap {
+
+    @include media($medium) {
       width: 30%;
       display: flex;
       justify-content: flex-end;
       margin-right: $spacer-lg;
+    }
+
+    @include media($large) {
+      width: 100%;
+      justify-content: center;
+      margin-right: $reset-0;
+      margin-bottom: $spacer-m;
     }
   }
 
@@ -217,17 +262,60 @@ body {
     font-size: 70px;
   }
 
-  @include media($medium) {
-    &__text {
+  &__text {
+
+    @include media($medium) {
       display: flex;
       flex-direction: column;
-      text-align: left;
       width: 40%;
       justify-content: center;
 
       p {
         text-align: left;
       }
+    }
+
+    @include media($large) {
+      text-align: center;
+      width: 100%;
+
+      p {
+        text-align: center;
+      }
+    }
+  }
+}
+
+.testimonial {
+  background-color: lighten($gray, 1%);
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: $spacer-3xl;
+  border-radius: 5px;
+
+  @include media($medium) {
+    flex-direction: row;
+    margin-top: $spacer-xlg;
+  }
+
+  @include media($large) {
+    @include sides-marg($spacer-m);
+    flex-direction: column;
+    margin-top: $spacer-xlg; //change this
+  }
+
+  &__text {
+    margin: $spacer-m;
+
+    @include media($medium) {
+      margin: $spacer-s;
+    }
+
+    @include media($medium) {
+      margin: $spacer-lg;
     }
   }
 }
