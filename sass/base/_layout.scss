@@ -204,6 +204,15 @@ body {
       @include media($large) {
         @include sides-marg($spacer-m);
       }
+
+      &--background {
+
+        @include media($large) {
+          background-color: lighten($gray, 2%);
+          border-radius: 5px;
+          padding: $spacer-s;
+        }
+      }
     }
 
     &__nav {
@@ -221,8 +230,24 @@ body {
     @include sides-marg($spacer-s);
     @include top-bottom-padd($spacer-xxl, $spacer-xxl);
 
+    @include media($large) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    @include media ($extra-large) {
+      @include sides-marg(auto);
+      width: 1280px;
+    }
+
     h3 {
       margin-bottom: $spacer-lg;
+
+      @include media($large) {
+        margin-bottom: $reset-0;
+        margin-right: $spacer-xlg;
+      }
     }
 
     &--about {

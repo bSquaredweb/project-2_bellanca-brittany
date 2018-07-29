@@ -39,4 +39,22 @@
   &--form-submit {
     flex-grow: 3;
   }
+
+  &--mobile {
+
+    @include media($large) {
+      display: none;
+      visibility: hidden;
+    }
+  }
+
+  &--desktop {
+    display: none;
+    visibility: hidden;
+
+    @include media($large) {
+      display: inline;
+      visibility: visible;
+    }
+  }
 }
