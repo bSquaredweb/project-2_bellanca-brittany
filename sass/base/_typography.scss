@@ -16,6 +16,10 @@ h2 {
   @include font-type($secondary-font, normal, normal, $blue, 36px);
   border-bottom: 2px solid $green;
   text-align: center;
+
+  @include media($large) {
+    text-align: left;
+  }
 }
 
 h3 {

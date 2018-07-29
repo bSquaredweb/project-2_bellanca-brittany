@@ -114,17 +114,19 @@ body {
           display: flex;
           @include top-bottom-marg($spacer-xxl, $reset-0);
 
-          .main__section--intro {
-            @include top-bottom-marg($reset-0, $reset-0);
-            width: 30%;
-            background-color: $gray;
-            border-radius: 5px;
-            padding: $spacer-m;
-          }
+          .main__section {
+            &--intro {
+              @include top-bottom-marg($reset-0, $reset-0);
+              width: 30%;
+              background-color: $gray;
+              border-radius: 5px;
+              padding: $spacer-m;
+            }
 
-          .main__section__wrap {
-            width: 70%;
-            @include top-bottom-marg($reset-0, $reset-0);
+            &__wrap {
+              width: 70%;
+              @include top-bottom-marg($reset-0, $reset-0);
+            }
           }
         }
       }
@@ -144,6 +146,13 @@ body {
 
     &--intro {
       margin: $spacer-m $spacer-s $spacer-xlg;
+
+      p {
+
+        @include media($large) {
+          text-align: left;
+        }
+      }
     }
 
     &__title {
@@ -166,7 +175,7 @@ body {
       h3 {
 
         @include media($large) {
-          background-color: lighten($gray, 5%);
+          background-color: lighten($gray, 4%);
         }
       }
 
@@ -186,6 +195,7 @@ body {
 
         @include media($large) {
           @include sides-marg($spacer-m);
+          @include top-bottom-marg($reset-0, $reset-0);
           flex-direction: column;
           justify-content: space-between;
           width: calc(100% / 3);
@@ -217,10 +227,19 @@ body {
 
     &__nav {
 
+      &__list {
+
+        @include media($large) {
+          display: flex;
+          justify-content: center;
+        }
+      }
+
       &__item {
 
         @include media($large) {
           @include top-bottom-marg($spacer-m, $spacer-m);
+          @include sides-marg($spacer-xlg);
         }
       }
     }
@@ -402,6 +421,10 @@ body {
       display: flex;
       flex-direction: column;
       order: 2;
+
+      p {
+        text-align: left;
+      }
     }
   }
 
