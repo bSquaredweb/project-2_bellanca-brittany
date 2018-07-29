@@ -209,41 +209,33 @@ body {
 
   &__main {
     @include top-bottom-marg($spacer-lg, $spacer-lg);
-    @include sides-marg($spacer-xlg);
-    display: flex;
-    justify-content: space-between;
+
+    @include media($large) {
+      @include sides-marg($spacer-xlg);
+      display: flex;
+      justify-content: space-between;
+    }
   }
 
   &__img {
     width: 100%;
     max-width: 125px;
-    display: flex;
-    order: 1;
 
     @include media($large) {
+      display: flex;
+      order: 1;
       max-width: 200px;
     }
   }
 
   &__nav {
+    @include top-bottom-marg($spacer-m, $spacer-lg);
 
     @include media($large) {
+      @include top-bottom-marg($reset-0, $reset-0);
       display: flex;
       order: 4;
-    }
-  }
-
-  &__list {
-
-    &__item {
-
-      @include media($large) {
-        text-align: left;
-      }
-
-      &--extra-space {
-        margin-bottom: $spacer-lg;
-      }
+      text-align: left;
     }
   }
 
@@ -254,9 +246,29 @@ body {
   }
 
   &__social-media {
+    @include top-bottom-marg($spacer-lg, $spacer-lg);
     display: flex;
-    flex-direction: column;
-    order: 3;
+    justify-content: center;
+
+    @include media($large) {
+      @include top-bottom-marg($reset-0, $reset-0);
+      flex-direction: column;
+      justify-content: flex-start;
+      order: 3;
+      text-align: left;
+    }
+
+    &__list {
+      display: flex;
+
+      @include media($large) {
+        flex-direction: column;
+      }
+
+      &__item {
+        @include sides-marg($spacer-xs);
+      }
+    }
   }
 
   &__edu-statement {
@@ -286,7 +298,7 @@ body {
   display: none;
   visibility: hidden;
 
-  @include media($medium) {
+  @include media($large) {
     display: inline;
     visibility: visible;
   }
