@@ -72,18 +72,30 @@ a {
   }
 }
 
-.fa-stack {
-  color: $green;
+.social-media {
 
-  &:hover {
-    color: darken($green, 25%);
-    transition: .3s;
-  }
-
-  &--alt {
+  &__icon {
     color: $white;
+
+    &:hover {
+      color: darken($green, 25%);
+      transition: .3s;
+    }
   }
 }
+
+// .fa-stack {
+//   color: $green;
+//
+//   &:hover {
+//     color: darken($green, 25%);
+//     transition: .3s;
+//   }
+//
+//   &--alt {
+//     color: $white;
+//   }
+// }
 
 .text {
 

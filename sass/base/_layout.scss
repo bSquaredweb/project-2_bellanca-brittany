@@ -209,7 +209,7 @@ body {
 
   &__main {
     @include top-bottom-marg($spacer-lg, $spacer-lg);
-    @include sides-marg($spacer-lg);
+    @include sides-marg($spacer-xlg);
     display: flex;
     justify-content: space-between;
   }
@@ -218,7 +218,11 @@ body {
     width: 100%;
     max-width: 125px;
     display: flex;
-    order: 0;
+    order: 1;
+
+    @include media($large) {
+      max-width: 200px;
+    }
   }
 
   &__nav {
@@ -274,6 +278,16 @@ body {
 
   @include media($large) {
     display: block;
+    visibility: visible;
+  }
+}
+
+.hidden {
+  display: none;
+  visibility: hidden;
+
+  @include media($medium) {
+    display: inline;
     visibility: visible;
   }
 }
