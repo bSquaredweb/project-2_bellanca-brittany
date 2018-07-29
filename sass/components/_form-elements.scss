@@ -75,7 +75,6 @@
           pointer-events: none;
         }
 
-        // Select Form Input Styling
         select {
           @include font-type($primary-font, normal, normal, $blue, 16px);
           background-color: $white;
@@ -108,6 +107,10 @@
 
     &--buttons {
       flex-direction: row;
+
+      @include media($large) {
+        margin-bottom: $reset-0;
+      }
     }
   }
 }

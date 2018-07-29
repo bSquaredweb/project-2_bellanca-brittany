@@ -97,6 +97,27 @@ body {
       @include media($medium) {
         @include sides-marg($spacer-xlg);
       }
+
+      &--contact {
+
+        @include media($large) {
+          display: flex;
+          @include top-bottom-marg($spacer-xxl, $reset-0);
+
+          .main__section--intro {
+            @include top-bottom-marg($reset-0, $reset-0);
+            width: 30%;
+            background-color: $gray;
+            border-radius: 5px;
+            padding: $spacer-m;
+          }
+
+          .main__section__wrap {
+            width: 70%;
+            @include top-bottom-marg($reset-0, $reset-0);
+          }
+        }
+      }
     }
 
     &--first {
