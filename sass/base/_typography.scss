@@ -63,6 +63,7 @@ a {
 
   &.alt {
     border-bottom: none;
+    padding: $reset-0;
 
     &:hover {
       color: darken($green, 25%);

@@ -209,21 +209,50 @@ body {
 
   &__main {
     @include top-bottom-marg($spacer-lg, $spacer-lg);
+    @include sides-marg($spacer-lg);
+    display: flex;
+    justify-content: space-between;
   }
 
   &__img {
     width: 100%;
     max-width: 125px;
+    display: flex;
+    order: 0;
+  }
+
+  &__nav {
+
+    @include media($large) {
+      display: flex;
+      order: 4;
+    }
   }
 
   &__list {
 
     &__item {
 
+      @include media($large) {
+        text-align: left;
+      }
+
       &--extra-space {
         margin-bottom: $spacer-lg;
       }
     }
+  }
+
+  &__contact-info {
+    display: flex;
+    flex-direction: column;
+    order: 2;
+  }
+
+  &__social-media {
+    display: flex;
+    flex-direction: column;
+    order: 3;
   }
 
   &__edu-statement {
