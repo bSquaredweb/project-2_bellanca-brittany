@@ -134,6 +134,24 @@ body {
 
     &--first {
       @include top-bottom-padd($spacer-lg, $spacer-xxl);
+
+      @include media($large) {
+        @include sides-marg(auto);
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: $spacer-xlg;
+        grid-auto-flow: column;
+        max-width: 1280px;
+      }
+    }
+
+    &--item {
+
+      @include media($large) {
+        align-self: center;
+        width: 80%;
+        justify-self: end;
+      }
     }
 
     &--index {
@@ -167,6 +185,12 @@ body {
     &__app-demo {
       width: 100%;
       max-width: 520px;
+
+      @include media($large) {
+        max-width: 400px;
+        margin-left: 0;
+        margin-right: 100%;
+      }
     }
 
     &__wrap {
