@@ -58,7 +58,7 @@ html {
       margin-top: $spacer-s;
     }
 
-    @include @media($large) {
+    @include media($large) {
       display: none;
       visibility: hidden;
     }
