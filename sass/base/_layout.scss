@@ -57,6 +57,11 @@ html {
     @include media($medium) {
       margin-top: $spacer-s;
     }
+
+    @include @media($large) {
+      display: none;
+      visibility: hidden;
+    }
   }
 
   &__list {
