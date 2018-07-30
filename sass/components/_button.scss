@@ -34,10 +34,20 @@
 
   &--form {
     flex-grow: 1;
+
+    @include media($medium) {
+      flex-grow: 0;
+      width: 15%;
+    }
   }
 
   &--form-submit {
     flex-grow: 3;
+
+    @include media($medium) {
+      flex-grow: 0;
+      width: 25%;
+    }
   }
 
   &--mobile {
