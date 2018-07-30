@@ -17,7 +17,7 @@
 - [CSS-Tricks Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/): I am referring to this site for help with Flexbox.
 - [CSS-Tricks Guide to CSS Grid](https://css-tricks.com/snippets/css/complete-guide-grid/): This site really is awesome. It helped me understand how to set up my CSS Grid.
 - [CSS-Tricks SVG](https://css-tricks.com/using-svg/): I learned that I could look at Illustrator and get the code for SVGs! Neat!
-- [CSS Tricks When to Use Button Elements](https://css-tricks.com/use-button-element/): So, when I was validating my code, it said that an `<a>` could not be a child of a `<button>` and vice versa, so I went searching and found this article. It says that we should only use `<button>` inside of `<form>`, so I changed my `<button>` back to `<div>`.
+- [CSS-Tricks When to Use Button Elements](https://css-tricks.com/use-button-element/): So, when I was validating my code, it said that an `<a>` could not be a child of a `<button>` and vice versa, so I went searching and found this article. It says that we should only use `<button>` inside of `<form>`, so I changed my `<button>` back to `<div>`.
 
   ##### Plugins
   - [Drawer jQuery Plugin](https://github.com/blivesta/drawer/): A neat plugin for a fairly flexible hamburger navigation.
