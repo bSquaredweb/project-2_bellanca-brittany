@@ -17,6 +17,8 @@ html {
   @include sides-marg($spacer-s);
   @include top-bottom-padd($spacer-s, $spacer-xs);
   min-width: 320px;
+  display: grid;
+  grid-template-columns: 120px auto 65px;
 
   @include media($large) {
     @include sides-marg($spacer-m);
@@ -45,6 +47,15 @@ html {
     @include media($large) {
       max-width: 150px;
       padding-bottom: $spacer-m;
+    }
+  }
+
+  &__button {
+    justify-self: end;
+    margin-top: $spacer-xs;
+
+    @include media($medium) {
+      margin-top: $spacer-s;
     }
   }
 
@@ -112,8 +123,8 @@ html {
       &--contact {
 
         @include media($large) {
-          display: flex;
           @include top-bottom-marg($spacer-xxl, $reset-0);
+          display: flex;
 
           .main__section {
             &--intro {
@@ -125,8 +136,8 @@ html {
             }
 
             &__wrap {
-              width: 70%;
               @include top-bottom-marg($reset-0, $reset-0);
+              width: 70%;
             }
           }
         }
