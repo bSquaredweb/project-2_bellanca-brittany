@@ -414,7 +414,6 @@ html {
       @include sides-marg($spacer-xlg);
       display: grid;
       grid-template-columns: 25% 25% 25% 25%;
-      grid-template-rows: 1;
       grid-auto-flow: row;
     }
 
