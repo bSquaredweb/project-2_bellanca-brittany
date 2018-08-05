@@ -30,27 +30,6 @@
       padding: $spacer-s;
     }
 
-    &--error {
-
-      label {
-        color: $red;
-      }
-
-      input {
-        border-color: transparent;
-        border-bottom: 2px solid $red;
-      }
-
-      :focus {
-        outline-color: $red;
-      }
-
-      ::selection {
-        background-color: $red;
-        color: $white;
-      }
-    }
-
     &--select {
 
       label {

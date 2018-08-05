@@ -205,8 +205,6 @@ html {
 
       @include media($large) {
         max-width: 400px;
-        margin-left: 0;
-        margin-right: 100%;
       }
     }
 
@@ -318,6 +316,13 @@ html {
 
 .item-container {
   @include top-bottom-marg($spacer-lg, $spacer-lg);
+
+  &--photo {
+
+    @include media($large) {
+      justify-self: start;
+    }
+  }
 }
 
 .circle {

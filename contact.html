@@ -109,23 +109,24 @@
               We love hearing from our customers! Whether you have a problem with our app or a design idea, please use the form to contact us and we’ll get back to you within 24 hours!</p>
           </div>
           <div class="main__section__wrap">
-            <form class="form" action="index.html" method="post">
+            <form class="form" id="form">
               <div class="form__field">
                 <label for="fullName">Full Name</label>
-                <input type="text" name="fullName" id="fullName">
+                <input type="text" name="fullName" id="fullName" class="input">
               </div>
               <div class="form__field">
                 <label for="emailAddress">Email Address</label>
-                <input type="email" name="emailAddress" id="emailAddress">
+                <input type="email" name="emailAddress" id="emailAddress" class="input">
               </div>
               <div class="form__field">
                 <label for="phoneNumber">Phone Number</label>
-                <input type="tel" name="phoneNumber" id="phoneNumber">
+                <input type="tel" name="phoneNumber" id="phoneNumber" class="input">
               </div>
               <div class="form__field form__field--select">
                 <label for="contactMethod">Preferred Contact Method</label>
                 <div class="select">
                   <select class="contactMethod" name="contactMethod" id="contactMethod">
+                    <option value="Select">--Select--</option>
                     <option value="Email">Please try email first!</option>
                     <option value="Phone">Please try phone first!</option>
                     <option value="None">I have no preference!</option>
@@ -134,13 +135,13 @@
               </div>
               <div class="form__field form__field--textarea">
                 <label for="message">What's Up?</label>
-                <textarea name="message" id="message"></textarea>
+                <textarea name="message" id="message" class="input"></textarea>
               </div>
               <div class="form__field form__field--buttons">
-                <button class="button button--secondary button--form" type="reset">
+                <button type="reset" class="button button--secondary button--form" id="reset">
                   Cancel
                 </button>
-                <button class="button button--primary button--form-submit" type="submit">
+                <button disabled type="submit" class="button button--disabled button--form-submit" id="submit">
                   Submit
                 </button>
               </div>
