@@ -70,6 +70,17 @@ a {
       border-bottom: none;
     }
   }
+
+  &.alert-link {
+      @include font-type($primary-font, normal, 600, darken($red, 15%), 16px);
+      padding: $reset-0;
+      border-bottom: none;
+
+      &:hover {
+        color: darken($red, 25%);
+        border-bottom: none;
+      }
+  }
 }
 
 .social-media {

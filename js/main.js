@@ -3,7 +3,7 @@ $(document).ready(function() {
   $('.drawer').drawer();
 });
 
-// Removed Disabled Attribute & Add button--primary when form is completed
+// Removes Disabled Attribute & Add button--primary when form is completed
 $(function() {
   $('.input').keyup(function() {
 
@@ -19,6 +19,11 @@ $(function() {
     } else {
       $('#submit').removeAttr('disabled').addClass('button--primary').removeClass('button--disabled');
     }
+  });
+
+  // When the reset button is clicked, the submit button becomes disabled again
+  $('#reset').on('click', function() {
+    $('#submit').attr('disabled', true).addClass('button--disabled').removeClass('button--primary');
   });
 }());
 
