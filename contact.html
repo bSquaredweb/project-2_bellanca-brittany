@@ -13,8 +13,34 @@
   <body class="body drawer drawer--top background--white">
     <header class="header">
       <a href="index.html" class="alt"><img src="img/logo.png" alt="Paperless Planner Logo" class="header__logo"></a>
-      <div class="button button--secondary button--header header__button">
+      <div class="button button--secondary button--header header__button" id="modal__button--mobile">
         Log In
+      </div>
+      <div class="modal" id="modal">
+        <div class="modal__content background--white">
+          <i class="fas fa-times modal__close text--brown"></i>
+          <form class="modal__form" id="form__login">
+            <div class="form__field">
+              <label for="username">Username</label>
+              <input type="text" name="username" id="username">
+            </div>
+            <div class="form__field modal__form__field--forgot">
+              <label for="password">Password</label>
+              <input type="text" name="password" id="password">
+            </div>
+            <div class="modal__form__forgot">
+              <p>forgot password?</p>
+            </div>
+            <div class="form__field modal__form__buttons">
+              <button class="button button--secondary">
+                Create an Account
+              </button>
+              <button type="submit" name="login" class="button button--primary button--modal" id="login">
+                Log In
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
       <button type="button" class="drawer-toggle drawer-hamburger">
         <span class="sr-only">toggle navigation</span>
@@ -65,9 +91,6 @@
             </ul>
           </li>
           <li class="header__list__item">
-            <button class="button button--secondary">
-              Log In
-            </button>
             <button class="button button--primary">
               Download App
             </button>
@@ -86,14 +109,14 @@
             <a href="contact.html">Contact Us</a>
           </li>
           <li class="header__list__item">
-            <a href="#">
+            <a href="#" id="modal__button--desktop">
               Log In
             </a>
           </li>
           <li class="header__list__item">
-            <button class="button button--primary">
+            <div class="button button--primary">
               Get Started Now!
-            </button>
+            </div>
           </li>
         </ul>
       </nav>
@@ -158,19 +181,29 @@
         <nav class="footer__nav">
           <ul class="footer__list">
             <li class="footer__list__item">
-              <a class="alt text--white" href="index.html">Home</a>
+              <a class="alt text--white" href="index.html">
+                Home
+              </a>
             </li>
             <li class="footer__list__item">
-              <a class="alt text--white" href="about.html">Learn More</a>
+              <a class="alt text--white" href="about.html">
+                Learn More
+              </a>
             </li>
             <li class="footer__list__item">
-              <a class="alt text--white" href="contact.html">Contact Us</a>
+              <a class="alt text--white" href="contact.html">
+                Contact Us
+              </a>
             </li>
             <li class="footer__list__item">
-              <a class="alt text--white" href="#">Log In</a>
+              <a class="alt text--white" href="#" id="modal__button--footer">
+                Log In
+              </a>
             </li>
             <li class="footer__list__item">
-              <a class="alt text--white" href="#">Download App</a>
+              <a class="alt text--white" href="#">
+                Download App
+              </a>
             </li>
           </ul>
         </nav>

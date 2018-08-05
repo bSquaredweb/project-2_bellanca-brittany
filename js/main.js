@@ -26,6 +26,7 @@ $(function() {
 var modal = document.getElementById('modal');
     button = document.getElementById("modal__button--mobile");
     buttonDesktop = document.getElementById("modal__button--desktop");
+    buttonFooter = document.getElementById("modal__button--footer");
     icon = document.getElementsByClassName("modal__close")[0];
 
 // Listen for a click on either the button or link to open the modal
@@ -37,14 +38,20 @@ buttonDesktop.addEventListener('click', function() {
   modal.style.display = "block";
 });
 
+// The page will not scroll to the top when the footer modal link is clicked
+buttonFooter.addEventListener('click', function(event) {
+  event.preventDefault();
+  modal.style.display = "block";
+});
+
 // Listen for a click on icon to close the modal
 icon.addEventListener('click', function() {
   modal.style.display = "none";
 });
 
 // Click outside of modal = modal will close
-window.onclick = function(event) {
+window.addEventListener('click', function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
     }
-};
+});
