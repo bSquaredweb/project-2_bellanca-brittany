@@ -3,6 +3,9 @@ $(document).ready(function() {
   $('.drawer').drawer();
 });
 
+// Activate scrollreveal on mobile
+ScrollReveal().reveal('.interactive-element__text');
+
 // Removes Disabled Attribute & Add button--primary when form is completed
 $(function() {
   $('.input').keyup(function() {
