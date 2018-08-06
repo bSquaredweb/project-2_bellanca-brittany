@@ -6,6 +6,40 @@ $(document).ready(function() {
 // Activate scrollreveal on mobile
 ScrollReveal().reveal('.interactive-element__text');
 
+// Custom jQuery - Click on Circle/Icon to reveal Text below
+$(document).ready(function() {
+  $('.interactive-element__circle--1').on('click',function(event) {
+    $('.interactive-element__text--1').css({
+      'opacity': '1',
+      'transition': '1s all'
+    });
+  });
+  $('.interactive-element__circle--2').click(function() {
+    $('.interactive-element__text--2').css({
+      'opacity': '1',
+      'transition': '1s all'
+    });
+  });
+  $('.interactive-element__circle--3').click(function() {
+    $('.interactive-element__text--3').css({
+      'opacity': '1',
+      'transition': '1s all'
+    });
+  });
+  $('.interactive-element__circle--4').click(function() {
+    $('.interactive-element__text--4').css({
+      'opacity': '1',
+      'transition': '1s all'
+    });
+  });
+  $('.interactive-element__circle--5').click(function() {
+    $('.interactive-element__text--5').css({
+      'opacity': '1',
+      'transition': '1s all'
+    });
+  });
+});
+
 // Removes Disabled Attribute & Add button--primary when form is completed
 $(function() {
   $('.input').keyup(function() {
@@ -25,7 +59,7 @@ $(function() {
   });
 
   // When the reset button is clicked, the submit button becomes disabled again
-  $('#reset').on('click', function() {
+  $('#reset').click(function() {
     $('#submit').attr('disabled', true).addClass('button--disabled').removeClass('button--primary');
   });
 }());
