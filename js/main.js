@@ -6,7 +6,7 @@ $(document).ready(function() {
 // Activate scrollreveal on mobile
 ScrollReveal().reveal('.interactive-element__text');
 
-// Custom jQuery - Click on Circle/Icon to reveal Text below
+// Custom jQuery - Click on Circle/Icon to reveal Text below through CSS changes
 $(document).ready(function() {
   $('.interactive-element__circle--1').on('click',function(event) {
     $('.interactive-element__text--1').css({
@@ -64,7 +64,7 @@ $(function() {
   });
 }());
 
-// Modal JS
+// Custom JS for Modal
 var modal = document.getElementById('modal');
     button = document.getElementById("modal__button--mobile");
     buttonDesktop = document.getElementById("modal__button--desktop");
