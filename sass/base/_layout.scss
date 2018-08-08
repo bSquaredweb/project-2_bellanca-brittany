@@ -211,17 +211,17 @@ html {
     &__wrap {
       @include top-bottom-marg($spacer-xlg, $reset-0);
 
-      h3 {
-
-        @include media($large) {
-          background-color: lighten($gray, 4%);
-        }
-      }
-
       &--flex {
 
         @include media($large) {
           display: flex;
+        }
+      }
+
+      h3 {
+
+        @include media($large) {
+          background-color: $white;
         }
       }
 

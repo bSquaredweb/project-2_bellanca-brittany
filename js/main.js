@@ -3,9 +3,6 @@ $(document).ready(function() {
   $('.drawer').drawer();
 });
 
-// Activate scrollreveal on mobile
-ScrollReveal().reveal('.interactive-element__text');
-
 // Custom jQuery - Click on Circle/Icon to reveal Text below through CSS changes
 $(document).ready(function() {
   $('.interactive-element__circle--1').on('click',function(event) {
