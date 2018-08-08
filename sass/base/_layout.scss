@@ -425,9 +425,9 @@ html {
     padding: $spacer-s;
     position: relative;
 
-    @include media($large) {
-      opacity: 0;
-    }
+    // @include media($large) {
+    //   visibility: hidden;
+    // }
 
     &:after {
     	content: '';
@@ -693,6 +693,20 @@ html {
 
   @include media($large) {
     display: inline;
+    visibility: visible;
+  }
+}
+
+.hidden-text {
+
+  @include media($large) {
+    visibility: hidden;
+  }
+}
+
+.visible-text {
+
+  @include media($large) {
     visibility: visible;
   }
 }

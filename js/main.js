@@ -5,36 +5,45 @@ $(document).ready(function() {
 
 // Custom jQuery - Click on Circle/Icon to reveal Text below through CSS changes
 $(document).ready(function() {
-  $('.interactive-element__circle--1').on('click',function(event) {
-    $('.interactive-element__text--1').css({
-      'opacity': '1',
-      'transition': '1s all'
+    $('.interactive-element__circle--1').click(function() {
+      if ( $('.interactive-element__text--1').hasClass('hidden-text') ) {
+        $('.interactive-element__text--1').removeClass('hidden-text').addClass('visible-text');
+      } else {
+        $('.interactive-element__text--1').addClass('hidden-text').removeClass('visible-text');
+      }
     });
-  });
-  $('.interactive-element__circle--2').click(function() {
-    $('.interactive-element__text--2').css({
-      'opacity': '1',
-      'transition': '1s all'
+
+    $('.interactive-element__circle--2').click(function() {
+      if ( $('.interactive-element__text--2').hasClass('hidden-text') ) {
+        $('.interactive-element__text--2').removeClass('hidden-text').addClass('visible-text');
+      } else {
+        $('.interactive-element__text--2').addClass('hidden-text').removeClass('visible-text');
+      }
     });
-  });
-  $('.interactive-element__circle--3').click(function() {
-    $('.interactive-element__text--3').css({
-      'opacity': '1',
-      'transition': '1s all'
+
+    $('.interactive-element__circle--3').click(function() {
+      if ( $('.interactive-element__text--3').hasClass('hidden-text') ) {
+        $('.interactive-element__text--3').removeClass('hidden-text').addClass('visible-text');
+      } else {
+        $('.interactive-element__text--3').addClass('hidden-text').removeClass('visible-text');
+      }
     });
-  });
-  $('.interactive-element__circle--4').click(function() {
-    $('.interactive-element__text--4').css({
-      'opacity': '1',
-      'transition': '1s all'
+
+    $('.interactive-element__circle--4').click(function() {
+      if ( $('.interactive-element__text--4').hasClass('hidden-text') ) {
+        $('.interactive-element__text--4').removeClass('hidden-text').addClass('visible-text');
+      } else {
+        $('.interactive-element__text--4').addClass('hidden-text').removeClass('visible-text');
+      }
     });
-  });
-  $('.interactive-element__circle--5').click(function() {
-    $('.interactive-element__text--5').css({
-      'opacity': '1',
-      'transition': '1s all'
+
+    $('.interactive-element__circle--5').click(function() {
+      if ( $('.interactive-element__text--5').hasClass('hidden-text') ) {
+        $('.interactive-element__text--5').removeClass('hidden-text').addClass('visible-text');
+      } else {
+        $('.interactive-element__text--5').addClass('hidden-text').removeClass('visible-text');
+      }
     });
-  });
 });
 
 // Custom jQuery - Removes Disabled Attribute & Add button--primary when form is completed
@@ -49,7 +58,7 @@ $(function() {
     });
 
     if (empty) {
-      $('#submit').hasClass('.button--disabled');
+      $('#submit').hasClass('button--disabled');
     } else {
       $('#submit').removeAttr('disabled').addClass('button--primary').removeClass('button--disabled');
     }

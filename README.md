@@ -1,49 +1,10 @@
 # Project 2 - Paperless Planner
 
 #### Link to repository
-[Paperless Planner on GitHub]()
-
-#### Link to website
-[Paperless Planner on the Web]()
-
-#### Instructions on how to view
-1. `git clone` the repository to view it locally.
-2. Use `sass --watch sass:css --style compressed` to get sass started.
-
----
-## Project 2 - Part 5
-
-#### Resources
-
-
-  ##### Plugins
-
-
-#### Deductions
-
-
-#### Comments
-- I think I'm getting pretty close to finishing things up! I have a few more questions that I'll ask during class tomorrow!
-
-
-- What I still have left to do
-  - Add a lightweight smooth scroll Plugin or other jQuery plugin
-  - Check over requirements
-  - Check over code for DRY, spacing, etc.
-  - **Extra idea / stretch goal**: Adjust my custom jQuery so that when user clicks on the circle again, the text box goes away.
-
-
-
-
-
-  # Project 2 - Application Name Here
-
-#### Link to repository
 [Github Link](https://github.com/bSquaredweb/project-2_bellanca-brittany)
 
 #### Link to website
 [Website Link](http://brittanybellanca.com/advweb2/project2/)
-<!-- Edit this for Project 2 - Part 3 -->
 
 #### Link to W3C's Validator
 [W3C Validator Link]()
@@ -89,9 +50,16 @@
 
 ##### Plugin 2
 - [ScrollReveal (a JS plugin)](https://scrollrevealjs.org/)
-  - This plugin is used on the Homepage on actual **mobile** devices (I do have it turned off on desktop devices). On the hompage, it makes the five "bubbles" appear next to their icons under the "Perks" section as the user scrolls on their mobile device.
+  - This plugin is used on the Homepage on actual **mobile** devices (I do have it turned off on desktop devices). On the hompage, it makes the five "bubbles" appear next to their icons under the "Perks" section as the user scrolls on their mobile device. I find it easiest to view this in the "device toolbar" of the dev tools.
 
 #### Deductions
 > I reviewed the list of deductions for this project and in the syllabus.
 
 #### Comments
+-
+
+
+- What I still have left to do
+  - Check over requirements
+  - Check over code for DRY, spacing, etc.
+  - **Extra idea / stretch goal**: Adjust my custom jQuery so that when user clicks on the circle again, the text box goes away.
