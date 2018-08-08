@@ -1,4 +1,4 @@
-// Call the Drawer
+// Call the Drawer Plugin
 $(document).ready(function() {
   $('.drawer').drawer();
 });
@@ -37,7 +37,7 @@ $(document).ready(function() {
   });
 });
 
-// Removes Disabled Attribute & Add button--primary when form is completed
+// Custom jQuery - Removes Disabled Attribute & Add button--primary when form is completed
 $(function() {
   $('.input').keyup(function() {
 
