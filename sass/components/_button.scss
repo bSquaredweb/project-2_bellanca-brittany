@@ -25,7 +25,6 @@
 
   &--disabled {
     @include buttons($gray, $white, darken($gray, 5%));
-    transition: none;
 
     &:hover {
       cursor: not-allowed;

@@ -1,6 +1,14 @@
+// Grid Mixin Settings Stylesheet
+// ===============================================
+
 @mixin grid-row-col($row-start, $row-end, $col-start, $col-end) {
   grid-row-start: $row-start;
   grid-row-end: $row-end;
   grid-column-start: $col-start;
   grid-column-end: $col-end;
+}
+
+@mixin grid-col($columns) {
+  display: grid;
+  grid-template-columns: $columns;
 }

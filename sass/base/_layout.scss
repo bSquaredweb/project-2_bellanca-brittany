@@ -15,9 +15,8 @@ html {
 .header {
   @include sides-marg($spacer-s);
   @include top-bottom-padd($spacer-s, $spacer-xs);
+  @include grid-col(120px auto 65px);
   min-width: 320px;
-  display: grid;
-  grid-template-columns: 120px auto 65px;
 
   @include media($large) {
     @include sides-marg($spacer-m);
@@ -162,8 +161,7 @@ html {
 
       @include media($large) {
         @include sides-marg(auto);
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        @include grid-col(1fr 1fr);
         grid-column-gap: $spacer-xlg;
         grid-auto-flow: column;
         max-width: 1280px;
@@ -312,8 +310,7 @@ html {
 .interactive-element {
 
   &__grid {
-    display: grid;
-    grid-template-columns: 60px 5fr;
+    @include grid-col(60px 5fr);
     grid-template-rows: repeat(5, 1fr);
     grid-row-gap: $spacer-lg;
     grid-auto-flow: row;
@@ -545,8 +542,7 @@ html {
 
     @include media($large) {
       @include sides-marg($spacer-xlg);
-      display: grid;
-      grid-template-columns: repeat(4, 25%);
+      @include grid-col(repeat(4, 25%));
       grid-auto-flow: row;
     }
 

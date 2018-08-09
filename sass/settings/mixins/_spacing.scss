@@ -1,3 +1,6 @@
+// Margins & Padding Mixin Settings Stylesheet
+// ===============================================
+
 @mixin sides-marg($side) {
   margin-right: $side;
   margin-left: $side;
