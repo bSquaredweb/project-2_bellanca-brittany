@@ -41,8 +41,7 @@
   }
 
   &__form {
-    display: flex;
-    flex-direction: column;
+    @include flex-dir(column);
 
     :focus {
       outline-color: $green;

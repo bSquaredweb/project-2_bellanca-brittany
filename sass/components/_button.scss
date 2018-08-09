@@ -53,18 +53,15 @@
   &--mobile {
 
     @include media($large) {
-      display: none;
-      visibility: hidden;
+      @include display-vis(none, hidden);
     }
   }
 
   &--desktop {
-    display: none;
-    visibility: hidden;
+    @include display-vis(none, hidden);
 
     @include media($large) {
-      display: inline;
-      visibility: visible;
+      @include display-vis(inline, visible);
     }
   }
 

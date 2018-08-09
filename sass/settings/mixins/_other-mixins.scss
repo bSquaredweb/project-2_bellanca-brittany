@@ -1,0 +1,9 @@
+@mixin display-vis($display, $visibility) {
+  display: $display;
+  visibility: $visibility;
+}
+
+@mixin flex-dir($direction) {
+  display: flex;
+  flex-direction: $direction;
+}

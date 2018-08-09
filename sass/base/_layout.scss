@@ -7,8 +7,7 @@ html {
 }
 
 .body {
-  display: flex;
-  flex-direction: column;
+  @include flex-dir(column);
   min-height: 100vh;
   min-width: 320px;
 }
@@ -22,10 +21,8 @@ html {
 
   @include media($large) {
     @include sides-marg($spacer-m);
-    @include top-bottom-padd($spacer-m, $spacer-m);
-    display: flex;
-    flex-direction: row;
-    padding-bottom: $reset-0;
+    @include top-bottom-padd($spacer-m, $reset-0);
+    @include flex-dir(row);
     justify-content: space-between;
     align-items: center;
   }
@@ -59,15 +56,13 @@ html {
     }
 
     @include media($large) {
-      display: none;
-      visibility: hidden;
+      @include display-vis(none, hidden);
     }
   }
 
   &__list {
     @include top-bottom-marg($spacer-xlg, $spacer-xlg);
-    display: flex;
-    flex-direction: column;
+    @include flex-dir(column);
     align-items: center;
     min-height: 450px;
 
@@ -331,21 +326,19 @@ html {
   }
 
   &__backbone {
+    @include grid-row-col(1, 6, 1, 2);
     width: 25px;
     height: 100%;
     min-height: 600px;
     background-color: $white;
-    grid-row: 1 / 6;
-    grid-column: 1 / 2;
     border-radius: 5px;
     justify-self: center;
 
     @include media($large) {
+      @include grid-row-col(1, 2, 1, 6);
       width: 100%;
       height: 25px;
       min-height: $reset-0;
-      grid-column: 1 / 6;
-      grid-row: 1 / 2;
     }
   }
 
@@ -361,52 +354,38 @@ html {
     cursor: pointer;
 
     &--1 {
-      grid-row: 1 / 2;
-      grid-column: 1 / 2;
-
-      @include media($large) {
-        grid-column: 1 / 2;
-        grid-row: 1 / 2;
-      }
+      @include grid-row-col(1, 2, 1, 2);
     }
 
     &--2 {
-      grid-row: 2 / 3;
-      grid-column: 1 / 2;
+      @include grid-row-col(2, 3, 1, 2);
 
       @include media($large) {
-        grid-column: 2 / 3;
-        grid-row: 1 / 2;
+        @include grid-row-col(1, 2, 2, 3);
       }
     }
 
     &--3 {
-      grid-row: 3 / 4;
-      grid-column: 1 / 2;
+      @include grid-row-col(3, 4, 1, 2);
 
       @include media($large) {
-        grid-column: 3 / 4;
-        grid-row: 1 / 2;
+        @include grid-row-col(1, 2, 3, 4);
       }
     }
 
     &--4 {
-      grid-row: 4 / 5;
-      grid-column: 1 / 2;
+      @include grid-row-col(4, 5, 1, 2);
 
       @include media($large) {
-        grid-column: 4 / 5;
-        grid-row: 1 / 2;
+        @include grid-row-col(1, 2, 4, 5);
       }
     }
 
     &--5 {
-      grid-row: 5 / 6;
-      grid-column: 1 / 2;
+      @include grid-row-col(5, 6, 1, 2);
 
       @include media($large) {
-        grid-column: 5 / 6;
-        grid-row: 1 / 2;
+        @include grid-row-col(1, 2, 5, 6);
       }
     }
   }
@@ -424,10 +403,6 @@ html {
     justify-self: center;
     padding: $spacer-s;
     position: relative;
-
-    // @include media($large) {
-    //   visibility: hidden;
-    // }
 
     &:after {
     	content: '';
@@ -504,8 +479,7 @@ html {
   &__text {
 
     @include media($medium) {
-      display: flex;
-      flex-direction: column;
+      @include flex-dir(column);
       width: 40%;
       justify-content: center;
 
@@ -526,11 +500,10 @@ html {
 }
 
 .testimonial {
+  @include flex-dir(column);
   background-color: lighten($gray, 1%);
   width: 90%;
   margin: auto;
-  display: flex;
-  flex-direction: column;
   align-items: center;
   margin-top: $spacer-3xl;
   border-radius: 5px;
@@ -543,7 +516,7 @@ html {
   @include media($large) {
     @include sides-marg($spacer-m);
     flex-direction: column;
-    margin-top: $spacer-xlg; //change this
+    margin-top: $spacer-xlg;
   }
 
   &__text {
@@ -573,7 +546,7 @@ html {
     @include media($large) {
       @include sides-marg($spacer-xlg);
       display: grid;
-      grid-template-columns: 25% 25% 25% 25%;
+      grid-template-columns: repeat(4, 25%);
       grid-auto-flow: row;
     }
 
@@ -616,10 +589,7 @@ html {
   &__contact-info {
 
     @include media($large) {
-      grid-column-start: 2;
-      grid-column-end: 3;
-      grid-row-start: 1;
-      grid-row-end: 2;
+      @include grid-row-col(1, 2, 2, 3);
       justify-self: center;
 
       p {
@@ -639,11 +609,8 @@ html {
 
     @include media($large) {
       @include top-bottom-marg($reset-0, $reset-0);
+      @include grid-row-col(1, 2, 3, 4);
       display: block;
-      grid-column-start: 3;
-      grid-column-end: 4;
-      grid-row-start: 1;
-      grid-row-end: 2;
       justify-self: center;
     }
 
@@ -672,28 +639,23 @@ html {
 .drawer-hamburger, .drawer-nav {
 
   @include media($large) {
-    display: none;
-    visibility: hidden;
+    @include display-vis(none, hidden);
   }
 }
 
 .desktop-nav {
-  display: none;
-  visibility: hidden;
+  @include display-vis(none, hidden);
 
   @include media($large) {
-    display: block;
-    visibility: visible;
+    @include display-vis(block, visible);
   }
 }
 
 .hidden {
-  display: none;
-  visibility: hidden;
+  @include display-vis(none, hidden);
 
   @include media($large) {
-    display: inline;
-    visibility: visible;
+    @include display-vis(inline, visible);
   }
 }
 

@@ -3,8 +3,7 @@
 
 .form {
   @include sides-marg($spacer-s);
-  display: flex;
-  flex-direction: column;
+  @include flex-dir(column);
   align-items: center;
 
   :focus {
