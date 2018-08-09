@@ -7,10 +7,14 @@
 [Website Link](http://brittanybellanca.com/advweb2/project2/)
 
 #### Link to W3C's Validator
-[W3C Validator Link]()
+- [W3C Validator Link - Homepage](https://validator.w3.org/nu/?doc=http%3A%2F%2Fbrittanybellanca.com%2Fadvweb2%2Fproject2%2F)
+- [W3C Validator Link - About Page](https://validator.w3.org/nu/?doc=http%3A%2F%2Fbrittanybellanca.com%2Fadvweb2%2Fproject2%2Fabout.html)
+- [W3C Validator Link - Contact Page](https://validator.w3.org/nu/?doc=http%3A%2F%2Fbrittanybellanca.com%2Fadvweb2%2Fproject2%2Fcontact.html)
 
 #### Link to HTML5 Outliner
-[HTML5 Outliner]()
+- [HTML5 Outliner - Homepage](https://gsnedders.html5.org/outliner/process.py?url=http%3A%2F%2Fbrittanybellanca.com%2Fadvweb2%2Fproject2%2Findex.html)
+- [HTML5 Outliner - About Page](https://gsnedders.html5.org/outliner/process.py?url=http%3A%2F%2Fbrittanybellanca.com%2Fadvweb2%2Fproject2%2Fabout.html)
+- [HTML5 Outliner - Contact Page](https://gsnedders.html5.org/outliner/process.py?url=http%3A%2F%2Fbrittanybellanca.com%2Fadvweb2%2Fproject2%2Fcontact.html)
 
 #### Instructions on how to view
 1. `git clone` the repository to view it locally.
@@ -49,17 +53,11 @@
     - The Drawer documentation says the Drawer is dependent on iScroll, so iScroll is included as well, but is _only_ used to support Drawer.
 
 ##### Plugin 2
-- [ScrollReveal (a JS plugin)](https://scrollrevealjs.org/)
-  - This plugin is used on the Homepage on actual **mobile** devices (I do have it turned off on desktop devices). On the hompage, it makes the five "bubbles" appear next to their icons under the "Perks" section as the user scrolls on their mobile device. I find it easiest to view this in the "device toolbar" of the dev tools.
+- [ScrollReveal (a JS plugin - approved during class)](https://scrollrevealjs.org/)
+  - This plugin is used on the Homepage on actual **mobile** devices (I do have it turned off on desktop devices). On the homepage, it makes the five "bubbles" appear next to their icons under the "Perks" section as the user scrolls on their mobile device. I find it easiest to view this in the "device toolbar" of the dev tools.
 
 #### Deductions
 > I reviewed the list of deductions for this project and in the syllabus.
 
 #### Comments
--
-
-
-- What I still have left to do
-  - Check over requirements
-  - Check over code for DRY, spacing, etc.
-  - **Extra idea / stretch goal**: Adjust my custom jQuery so that when user clicks on the circle again, the text box goes away.
+- Overall, I really enjoyed this project, even though it felt like a lot of work! I feel like I've worked hard to learn a lot of useful skills over the semester!
