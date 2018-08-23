@@ -10,7 +10,6 @@
   width: 100%;
   height: 100%;
   background-color: rgba($black, 0.7);
-  border-radius: 5px;
 
   &__content {
     display: flex;
@@ -19,6 +18,7 @@
     margin: $spacer-xxl auto;
     padding: $spacer-m;
     width: 80%;
+    border-radius: 5px;
 
     @include media($medium) {
       width: 60%;
